@@ -1,0 +1,23 @@
+.main-title {
+    margin-bottom: 80px;
+    @media(max-width:991px) {
+        margin-bottom: 40px;
+    }
+    h1 {
+        margin-bottom: 20px;
+        font-weight: 100;
+        line-height: 29px!important;
+        @media(max-width:480px) {
+            font-size: 30px;
+        }
+    }
+    p {
+        max-width: 630px;
+        margin: 0 auto;
+        font-size: 16px;
+        line-height: 26px;
+        @media(max-width:991px) {
+            margin: 0;
+        }
+    }
+}
