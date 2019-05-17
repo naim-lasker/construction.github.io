@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------
+# Start Service Area
+--------------------------------------------------------------*/
+.service-area {
+    background: $offwhite;
+}
+
+.single-service {
+    padding: 36px 27px;
+    text-align: center;
+    border: 1px solid $gray;
+    background: $white;
+    @include transition();
+    @media(max-width: 768px) {
+        padding: 30px 18px;
+    }
+    .top-icon {
+        display: inline-block;
+        background: rgba($primary-color, .15);
+        border-radius: 50px;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        line-height: 80px;
+    }
+    h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: $title-color;
+        margin-top: 25px;
+        margin-bottom: 18px;
+    }
+    p {
+        margin-bottom: 21px;
+    }
+    &:hover {
+        box-shadow: 0px 20px 40px 0 rgba($title-color, 0.16);
+        .primary-btn2 {
+            color: $primary-color;
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# End Service Area
+--------------------------------------------------------------*/

@@ -181,8 +181,9 @@ $(document).ready(function() {
     margin: 30,
     autoplayHoverPause: true,
     smartSpeed: 500,
-    dots: false,
-    // autoplay: true,
+    nav: false,
+    dots: true,
+    autoplay: true,
     responsive: {
       0: {
         items: 1

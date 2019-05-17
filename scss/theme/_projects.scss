@@ -1,0 +1,51 @@
+/*--------------------------------------------------------------
+# Start Project Area
+--------------------------------------------------------------*/
+.project-area {
+    margin-bottom: 180px;
+    @media (max-width: 991px) {
+        margin-bottom: 130px;
+    }
+    .top-part {
+        .main-title {
+            padding: 100px 93px 50px 0;
+            background: $white;
+            position: relative;
+            margin-right: -100px;
+            z-index: 9;
+            @media (max-width: 991px) {
+                margin-right: 0px;
+            }
+            h2 {
+                font-size: 42px;
+            }
+            .primary-btn {
+                margin-top: 35px;
+            }
+        }
+    }
+    .bottom-part {
+        .main-title {
+            padding: 90px 60px 90px 70px;
+            background: $white;
+            position: relative;
+            margin-left: -100px;
+            margin-bottom: -50px;
+            z-index: 9;
+            box-shadow: 0px 20px 30px 0 rgba($title-color, 0.16);
+            @media (max-width: 991px) {
+                margin-left: 0px;
+            }
+            h2 {
+                font-size: 42px;
+            }
+            .primary-btn {
+                margin-top: 35px;
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# End Project Area
+--------------------------------------------------------------*/

@@ -51,20 +51,6 @@
             }
         }
     }
-    .lnr {
-        display: none;
-    }
-    @media(max-width:588px) {
-        .lnr {
-            display: block;
-            font-weight: bold;
-            font-size: 16px;
-            color: $white;
-        }
-        .text {
-            display: none;
-        }
-    }
     @media(max-width:991px) {
         display: none;
     }
