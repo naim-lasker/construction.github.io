@@ -1,4 +1,3 @@
-
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 
@@ -8,15 +7,14 @@
 
 @import "bootstrap/mixins/breakpoints";
 
-
 // including variables and mixins
 @import "theme/variables";
 @import "theme/mixins";
 @import "theme/predefine";
 @import "theme/reset";
 
-
-// Custom Scss 
+// Custom Scss
 @import "theme/header";
+@import "theme/banner";
 @import "theme/home";
 @import "theme/footer";

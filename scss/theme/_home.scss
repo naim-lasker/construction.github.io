@@ -1,31 +1,11 @@
-.section-gap {
-    padding: 120px 0px;
-    @media(max-width: 991px) {
-        padding: 50px 0px;
-    }
-}
 
-.section-title {
-    padding-bottom: 30px;
-    h2 {
-        margin-bottom: 20px;
-    }
-    p {
-        font-size: 16px;
-        margin-bottom: 0;
-        @include media-breakpoint-down (md) {
-            br {
-                display: none;
-            }
-        }
-    }
-}
 
 .alert-msg {
     color: #008000;
 }
 
 .primary-btn {
+    background: $primary-color;
     line-height: 42px;
     padding: 0px 30px;
     border-radius: 5px;
@@ -83,6 +63,16 @@
 .home-banner-area {
     background: url(../img/home-banner-bg.jpg) no-repeat center;
     background-size: cover;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(#2b2f6a, 0.6);
+    }
 }
 
 .banner-area {
@@ -128,10 +118,10 @@
 .fullscreen {
     height: 740px;
     @include media-breakpoint-down (sm) {
-        height: 600px !important;
+        height: 600px;
     }
     @media ( max-width: 768px) {
-        height: 400px !important;
+        height: 400px;
     }
 }
 
@@ -140,33 +130,20 @@
 }
 
 .banner-content {
-    h1 {
+    h4 {
+        font-size: 18px;
+        font-weight: 500;
+        color: $primary-color;
+        margin-bottom: 30px;
+    }
+    h2 {
         color: $white;
-        font-size: 72px;
-        font-weight: 100;
-        line-height: 77px !important;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        @media ( max-width: 768px) {
-            font-size:35px;
-            line-height: 40px !important;
-        }
-        @media ( max-width: 414px) {
-            font-size: 30px;
-        }
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 40px;
     }
     p {
         max-width: 900px;
-    }
-}
-
-.header-btn {
-    border: 1px solid transparent;
-    background-color: $primary-color;
-    &:hover {
-        border: 1px solid $white;
-        background: transparent;
-        color: $white;
     }
 }
 
@@ -232,8 +209,8 @@
 }
 
 //--------- Start Latest News Area -------------//
-//--------- Start Our Offer Area -------------//
-.our-offer-area {
+//--------- Start Our Company Area -------------//
+.our-company-area {
     background: $black;
     .main-title {
         margin-bottom: 0;
@@ -247,33 +224,18 @@
             font-size: 14px;
             margin-bottom: 40px;
         }
-        .offer-btn {
-            border: 1px solid $white;
-            &:hover {
-                background: $white;
-                color: $title-color;
-            }
-            @media(max-width:380px) {
-                margin-bottom: 20px;
-            }
-        }
-        .quote-btn {
-            background: $white;
-            color: $title-color;
-            border: 1px solid $white;
-        }
     }
 }
 
-//--------- End Our Offer Area -------------//
+//--------- End Our Company Area -------------//
 //--------- Start testimonial Area -------------//
 .testimonial-area {
-    background: url(../img/testimonial-bg.jpg) no-repeat scroll center center;
+    background: url(../img/testimonial/testimonial-bg.jpg) no-repeat scroll center center;
     background-size: cover;
     position: relative;
     &:before {
         content: "";
-        background: rgba(63, 172, 228, 0.68);
+        background: rgba(#030112, 0.8);
         position: absolute;
         left: 0px;
         top: 0px;
