@@ -74,6 +74,9 @@
         font-weight: 700;
         color: $title-color;
         margin-bottom: 22px;
+        @media (max-width: 1630px) {
+            font-size: 38px;
+          }
     }
     .color-text {
         font-size: 22px;
@@ -90,7 +93,12 @@
 }
 
 .primary-btn {
-    background: $primary-color;
+    background: -webkit-linear-gradient(to right, $primary-color2 0%, $primary-color 51%, $primary-color2 100%);
+    background: -moz-linear-gradient(to right, $primary-color2 0%, $primary-color 51%, $primary-color2 100%);
+    background: -ms-linear-gradient(to right, $primary-color2 0%, $primary-color 51%, $primary-color2 100%);
+    background: -o-linear-gradient(to right, $primary-color2 0%, $primary-color 51%, $primary-color2 100%);
+    background: linear-gradient(to right, $primary-color2 0%, $primary-color 51%, $primary-color 100%);
+    background-size: 200% auto;
     line-height: 50px;
     padding: 0px 35px;
     border-radius: 2px;
@@ -113,6 +121,7 @@
         color: $white;
     }
     &:hover {
+        background-position: right center;
         color: $white;
         span {
             color: $white;

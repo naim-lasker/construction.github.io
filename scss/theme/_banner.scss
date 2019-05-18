@@ -22,7 +22,7 @@
         @media ( max-width: 768px) {
             height: 400px;
         }
-    }    
+    }
 }
 .banner-content {
     h4 {
@@ -39,6 +39,9 @@
     }
     p {
         max-width: 900px;
+    }
+    .primary-btn {
+      line-height: 44px;
     }
 }
 .banner-area {

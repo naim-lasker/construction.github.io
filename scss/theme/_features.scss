@@ -38,6 +38,9 @@
     p {
         margin-bottom: 0px;
     }
+    .primary-btn {
+      line-height: 44px;
+    }
     &:hover {
         border-top: 1px solid $primary-color;
         border-right: 1px solid transparent;
@@ -60,6 +63,9 @@
 --------------------------------------------------------------*/
 .advance-feature-area {
     position: relative;
+    @media (max-width: 1630px) {
+      padding-top: 120px; 
+    }
     .container-fluid {
       padding-left: 21%;
       @media (max-width: 1480px) {

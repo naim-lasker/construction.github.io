@@ -4,7 +4,6 @@ $(document).ready(function() {
   var window_width = $(window).width(),
     window_height = window.innerHeight,
     header_height = $(".default-header").height(),
-    header_height_static = $(".site-header.static").outerHeight(),
     fitscreen = window_height - header_height;
 
   // $(".fullscreen").css("height", window_height)
@@ -12,29 +11,7 @@ $(document).ready(function() {
 
   //------- Niceselect  js --------//
 
-  if (document.getElementById("default-select")) {
-    $("select").niceSelect();
-  }
-  if (document.getElementById("service-select")) {
-    $("select").niceSelect();
-  }
-
-  //------- Lightbox  js --------//
-
-  $(".img-gal").magnificPopup({
-    type: "image",
-    gallery: {
-      enabled: true
-    }
-  });
-
-  $(".play-btn").magnificPopup({
-    type: "iframe",
-    mainClass: "mfp-fade",
-    removalDelay: 160,
-    preloader: false,
-    fixedContentPos: false
-  });
+  $("select").niceSelect();
 
   //------- Superfist nav menu  js --------//
 
@@ -220,60 +197,6 @@ $(document).ready(function() {
       }
     }
   });
-
-  //------- Light Gallery js --------//
-  if (document.getElementById("lightgallery")) {
-    $("#lightgallery").lightGallery({
-      selector: ".all"
-    });
-  }
-
-  //------- Timer Countdown  js --------//
-
-  if (document.getElementById("count")) {
-    var countDownDate = new Date("Sep 5, 2018 15:37:25").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-      // Get todays date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now an the count down date
-      var distance = countDownDate - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor(
-        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-      );
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Display the result in the element with id="count"
-      document.getElementById("count").innerHTML =
-        "<div class='col'><span>" +
-        days +
-        "</span><br> Days " +
-        "</div>" +
-        "<div class='col'><span>" +
-        hours +
-        "</span><br> Hours " +
-        "</div>" +
-        "<div class='col'><span>" +
-        minutes +
-        "</span><br> Minutes " +
-        "</div>" +
-        "<div class='col'><span>" +
-        seconds +
-        "</span><br> Seconds </div>";
-
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("count").innerHTML = "EXPIRED";
-      }
-    }, 1000);
-  }
 
   //------- Google Map  js --------//
 
@@ -470,54 +393,4 @@ $(document).ready(function() {
       });
     }
   }
-
-  //------- Mailchimp js --------//
-
-  $(document).ready(function() {
-    $("#mc_embed_signup")
-      .find("form")
-      .ajaxChimp();
-  });
-
-  //------- Progress Bar --------//
-  $.fn.bekeyProgressbar = function(options) {
-    var $this = $(this);
-
-    var $progressBar = $this;
-    var $progressCount = $progressBar.find(".progressBar-percentage-count");
-    var $circle = $progressBar.find(".progressBar-circle");
-    var percentageProgress = $progressBar.attr("data-progress");
-    var percentageRemaining = 100 - percentageProgress;
-    var percentageText = $progressCount.parent().attr("data-progress");
-
-    //Calcule la circonférence du cercle
-    var radius = $circle.attr("r");
-    var diameter = radius * 2;
-    var circumference = Math.round(Math.PI * diameter);
-
-    //Calcule le pourcentage d'avancement
-    var percentage = (circumference * percentageRemaining) / 100;
-
-    $circle.css({
-      "stroke-dasharray": circumference,
-      "stroke-dashoffset": percentage
-    });
-  };
-
-  $(".progressBar--animateNone").bekeyProgressbar({
-    animate: false,
-    animateText: false
-  });
-
-  $(".progressBar--animateCircle").bekeyProgressbar({
-    animate: true,
-    animateText: false
-  });
-
-  $(".progressBar--animateText").bekeyProgressbar({
-    animate: false,
-    animateText: true
-  });
-
-  $(".progressBar--animateAll").bekeyProgressbar();
 });

@@ -5,25 +5,39 @@
 .header-top {
     font-size: 12px;
     padding: 0px;
-    height: 60px;
-    line-height: 60px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #222833;  
     a {
-        color: $black;
+        color: $white;
         font-weight: 500;
-        text-transform: uppercase;
-        font-size: 14px;
+        font-size: 12px;
         i {
             color: $gray;
         }
     }
-    ul {
-        display: inline-block;
-        border-right: 1px solid $gray;
-        padding: 0 15px;
+    .header-top-right-list {
+        display: flex;
+        justify-content: flex-end;
         margin: 0 auto;
-        li {
-            display: inline-block;
-            margin-left: 15px;
+        > li {
+            &:not(:last-child) {
+                a {
+                    padding-right: 10px;
+                    border-right: 1px solid $gray;
+                }
+            }
+        }
+        .nice-select {
+            background: transparent;
+            border: 0;
+            &:after {
+                border-bottom: 2px solid $white;
+                border-right: 2px solid $white;
+            }
+            .current {
+                color: $white;
+            }
         }
     }
     .header-top-right {
@@ -32,7 +46,7 @@
             @include transition();
         }
         a {
-            margin-right: 10px;
+            margin-left: 8px;
         }
         a:hover {
             @include transition();
@@ -42,13 +56,9 @@
         }
     }
     .header-top-left {
-        border-right: 1px solid $gray;
         display: inline-block;
         a {
             margin-right: 30px;
-            i {
-                color: $primary-color;
-            }
         }
     }
     @media(max-width:991px) {
@@ -193,10 +203,10 @@
 }
 
 .sf-arrows .sf-with-ul:after {
-    content: "\f107";
+    content: "\e64b";
     position: absolute;
     right: 15px;
-    font-family: FontAwesome;
+    font-family: 'themify';
     font-style: normal;
     font-weight: normal;
 }
@@ -222,9 +232,10 @@
         display: inline-block;
         color: $title-color;
         font-weight: 500;
-        font-size: 12px;
         text-transform: uppercase;
         outline: none;
+        font-size: 14px;
+        letter-spacing: 0.1px;
     }
 }
 
