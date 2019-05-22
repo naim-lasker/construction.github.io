@@ -35,9 +35,8 @@
 
     .footer-bottom {
         padding: 16px 0px;
-        border-top: 1px solid $gray;
+        border-top: 1px solid rgba($white, 0.25);
         .footer-text {
-
             a {
                 color: $primary-color;
             }
@@ -115,6 +114,44 @@
 
     @include media-breakpoint-down(md) {
         margin-bottom: 30px;
+    }
+    &.contact-widget {
+        .footer-nav {
+            li {
+                &:nth-child(1) {
+                    a {
+                        &:before {
+                            content: "\e621";
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    a {
+                        &:before {
+                            content: "\e75a";
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    a {
+                        &:before {
+                            content: "\e665";
+                        }
+                    }
+                }
+                a {
+                    position: relative;
+                    display: inline-block;
+                    margin-left: 20px;
+                    &:before {
+                        font-family: 'themify';
+                        position: relative;
+                        left: -20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }
 

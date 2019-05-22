@@ -36,12 +36,12 @@ $(document).ready(function() {
     });
     $("body").append($mobile_nav);
     $("body").prepend(
-      '<button type="button" id="mobile-nav-toggle"><i class="lnr lnr-menu"></i></button>'
+      '<button type="button" id="mobile-nav-toggle"><i class="ti-menu"></i></button>'
     );
     $("body").append('<div id="mobile-body-overly"></div>');
     $("#mobile-nav")
       .find(".menu-has-children")
-      .prepend('<i class="lnr lnr-chevron-down"></i>');
+      .prepend('<i class="ti-angle-down"></i>');
 
     $(document).on("click", ".menu-has-children i", function(e) {
       $(this)
@@ -51,12 +51,12 @@ $(document).ready(function() {
         .nextAll("ul")
         .eq(0)
         .slideToggle();
-      $(this).toggleClass("lnr-chevron-up lnr-chevron-down");
+      $(this).toggleClass("ti-angle-up ti-angle-down");
     });
 
     $(document).on("click", "#mobile-nav-toggle", function(e) {
       $("body").toggleClass("mobile-nav-active");
-      $("#mobile-nav-toggle i").toggleClass("lnr-cross lnr-menu");
+      $("#mobile-nav-toggle i").toggleClass("ti-close ti-menu");
       $("#mobile-body-overly").toggle();
     });
 
@@ -65,7 +65,7 @@ $(document).ready(function() {
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($("body").hasClass("mobile-nav-active")) {
           $("body").removeClass("mobile-nav-active");
-          $("#mobile-nav-toggle i").toggleClass("lnr-cross lnr-menu");
+          $("#mobile-nav-toggle i").toggleClass("ti-close ti-menu");
           $("#mobile-body-overly").fadeOut();
         }
       }
@@ -111,7 +111,7 @@ $(document).ready(function() {
 
         if ($("body").hasClass("mobile-nav-active")) {
           $("body").removeClass("mobile-nav-active");
-          $("#mobile-nav-toggle i").toggleClass("lnr-times lnr-bars");
+          $("#mobile-nav-toggle i").toggleClass("ti-close ti-menu");
           $("#mobile-body-overly").fadeOut();
         }
         return false;

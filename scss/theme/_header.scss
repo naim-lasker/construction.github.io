@@ -227,7 +227,7 @@
 
 .nav-menu {
     a {
-        padding: 38.5px 8px;
+        margin: 36px 8px;
         text-decoration: none;
         display: inline-block;
         color: $title-color;
@@ -237,6 +237,12 @@
         font-size: 14px;
         letter-spacing: 0.1px;
     }
+    .primary-btn {
+        padding: 0px 35px;
+        margin: 24px 0;
+        text-transform: capitalize;
+        line-height: 44px;
+    }
 }
 
 .nav-menu li:hover>a,
@@ -245,7 +251,7 @@
 }
 
 .nav-menu>li {
-    margin-left: 20px;
+    margin-left: 18px;
 }
 
 .nav-menu ul {

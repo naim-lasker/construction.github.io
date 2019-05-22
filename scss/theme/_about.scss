@@ -19,6 +19,22 @@
             margin-bottom: 40px;
         }
     }
+    .about-img-box {
+        position: relative;
+        .about-img {
+            position: relative;
+            z-index: 9;
+        }
+        &:after {
+            content: '';
+            background: url(../img/about-img-bg.png) no-repeat;
+            position: absolute;
+            left: 19px;
+            top: 0px;
+            right: -20px;
+            bottom: 0px;
+        }
+    }
 }
 
 /*--------------------------------------------------------------
