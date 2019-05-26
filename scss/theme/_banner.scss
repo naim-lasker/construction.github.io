@@ -19,9 +19,6 @@
         @include media-breakpoint-down (sm) {
             height: 600px;
         }
-        @media ( max-width: 768px) {
-            height: 400px;
-        }
     }
 }
 .banner-content {
@@ -36,6 +33,10 @@
         font-size: 50px;
         line-height: 60px;
         margin-bottom: 40px;
+        @media(max-width: 767px) {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
     p {
         max-width: 900px;
@@ -44,10 +45,39 @@
       line-height: 44px;
     }
 }
+
+
 .banner-area {
     background: url(../img/banner-bg.jpg) no-repeat center;
     background-size: cover;
-    min-height: 420px;
+    min-height: 400px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(#2b2f6a, 0.6);
+    }
+    .banner-content {
+        margin-top: 110px;
+        padding: 50px 0px;
+        @media(max-width: 767px) {
+            margin:120px 16px;
+        }
+        h1 {
+            font-size: 50px;
+            font-weight: 700;
+            @media ( max-width: 768px) {
+                font-size:35px;
+            }
+            @media ( max-width: 414px) {
+                font-size: 30px;
+            }
+        }
+    }
 }
 /*--------------------------------------------------------------
 # End Banner Area

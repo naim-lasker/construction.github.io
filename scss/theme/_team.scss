@@ -1,0 +1,106 @@
+/*--------------------------------------------------------------
+# Start Team Area
+--------------------------------------------------------------*/
+.team-area {
+    padding-bottom: 70px;
+
+    @media (max-width: 991px) {
+        padding-bottom: 20px;
+    }
+}
+
+.single-team {
+    margin-bottom: 163px;
+    @media (max-width: 991px) {
+        margin-bottom: 10px;
+    }
+    .thumb {
+        position: relative;
+    }
+
+    .meta-text {
+        padding: 42px 15px 40px;
+        position: absolute;
+        bottom: -24%;
+        left: 40px;
+        right: 40px;
+        background: $white;
+        @include transition();
+
+        @media (max-width: 991px) {
+            padding: 30px 15px;
+            position: relative;
+            left: 0;
+            bottom: 0px;
+            right: 0;
+        }
+
+
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            @include transition();
+        }
+
+        .designation {
+            font-size: 14px;
+            margin-bottom: 0px;
+            @include transition();
+            @media (max-width: 991px) {
+                margin-bottom: 18px;
+            }
+        }
+
+        a {
+            margin: 0 15px;
+            font-size: 14px;
+            font-weight: 400;
+            color: $white;
+            @include transition();
+
+            @media (max-width: 991px) {
+                color: $text-color;
+            }
+        }
+    }
+
+    .social {
+        display: none;
+        @media (max-width: 991px) {
+            display: block;
+        }
+    }
+
+    &:hover {
+        .meta-text {
+            @include gradient($primary-color 0%, $primary-color2 100%);
+            @media (max-width: 991px) {
+                background: transparent;
+            }
+
+            h4 {
+                color: $white;
+                @media (max-width: 991px) {
+                    color: $title-color;
+                }
+            }
+
+            .designation {
+                color: $white;
+                margin-bottom: 18px;
+                @media (max-width: 991px) {
+                    color: $text-color;
+                }
+            }
+        }
+
+        .social {
+            display: block;
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# End Team Area
+--------------------------------------------------------------*/

@@ -1,9 +1,15 @@
 /*--------------------------------------------------------------
 # Start Service Area
 --------------------------------------------------------------*/
-.latest-blog-area {}
+.latest-blog-area {
+    padding-bottom: 90px;
+    @media(max-width: 991px) {
+        padding-bottom: 50px;
+    }
+}
 
 .single-latest-blog {
+    margin-bottom: 30px;
     @include transition();
     .blog-info {
         padding: 35px 30px;
@@ -24,6 +30,9 @@
         font-size: 13px;
         font-weight: 500;
         letter-spacing: 0.5px;
+        @media(max-width: 575px) {
+            font-size: 12px;
+        }
     }
     .thumb {
         overflow: hidden;

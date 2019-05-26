@@ -2,7 +2,10 @@
 # Start Feature Area
 --------------------------------------------------------------*/
 .feature-area {
-    
+  padding-bottom: 90px;
+    @media(max-width: 991px) {
+        padding-bottom: 50px;
+    }
 }
 
 .single-feature {
@@ -10,6 +13,7 @@
     text-align: center;
     border: 1px solid $gray;
     position: relative;
+    margin-bottom: 30px;
     @include transition();
     @media(max-width: 768px) {
         padding: 30px 18px;
@@ -64,7 +68,10 @@
 .advance-feature-area {
     position: relative;
     @media (max-width: 1630px) {
-      padding-top: 120px; 
+      padding-top: 120px;
+    }
+    @media(max-width: 991px) {
+        padding-top: 80px;
     }
     .container-fluid {
       padding-left: 21%;
@@ -96,9 +103,6 @@
           -ms-flex-item-align: center;
           align-self: center;
           text-align: left;
-        }
-        @media (max-width: 991px) {
-          display: none;
         }
         img {
           @media (max-width: 1480px) {

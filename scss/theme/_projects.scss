@@ -3,12 +3,15 @@
 --------------------------------------------------------------*/
 .project-area {
     margin-bottom: 180px;
+
     @media (max-width: 991px) {
         margin-bottom: 130px;
     }
+
     .primary-btn {
-      line-height: 44px;
+        line-height: 44px;
     }
+
     .top-part {
         .main-title {
             padding: 100px 93px 50px 0;
@@ -16,17 +19,30 @@
             position: relative;
             margin-right: -100px;
             z-index: 9;
+
             @media (max-width: 991px) {
                 margin-right: 0px;
+                padding: 20px 0 40px;
             }
+
             h2 {
                 font-size: 42px;
+
+                @media (max-width: 991px) {
+                    font-size: 35px;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 25px;
+                }
             }
+
             .primary-btn {
                 margin-top: 35px;
             }
         }
     }
+
     .bottom-part {
         .main-title {
             padding: 90px 60px 90px 70px;
@@ -36,12 +52,25 @@
             margin-bottom: -50px;
             z-index: 9;
             box-shadow: 0px 20px 30px 0 rgba($title-color, 0.16);
+
             @media (max-width: 991px) {
                 margin-left: 0px;
+                padding: 40px 0 0;
+                box-shadow: none;
             }
+
             h2 {
                 font-size: 42px;
+
+                @media (max-width: 991px) {
+                    font-size: 35px;
+                }
+
+                @media (max-width: 767px) {
+                    font-size: 25px;
+                }
             }
+
             .primary-btn {
                 margin-top: 35px;
             }
@@ -51,4 +80,118 @@
 
 /*--------------------------------------------------------------
 # End Project Area
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Start Project Details Area
+--------------------------------------------------------------*/
+
+.project-details-area {
+    .project-heading {
+        font-size: 30px;
+        font-weight: 700;
+        color: $title-color;
+        margin-bottom: 22px;
+    }
+}
+
+.project-info {
+    .project-right-text {
+        h4 {
+            font-size: 20px;
+            font-weight: 700;
+            color: $title-color;
+            position: relative;
+            margin-bottom: 49px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 0;
+                width: 60px;
+                height: 2px;
+                background-color: $primary-color;
+            }
+        }
+
+        .list-box {
+            border: 1px solid $gray;
+            padding: 40px;
+        }
+
+        .list {
+            li {
+                border-bottom: 1px solid $gray;
+                margin-bottom: 16px;
+                padding-bottom: 16px;
+
+                span {
+                    display: inline-block;
+                }
+
+                .left-side {
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: $title-color;
+                }
+
+                .right-side {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
+
+.project-description {
+    margin-top: 80px;
+
+    p {
+        &:last-of-type {
+            margin-bottom: 80px;
+            @media (max-width: 991px) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
+
+.project-work {
+    margin-top: 80px;
+
+    p {
+        &:last-of-type {
+            margin-bottom: 80px;
+            @media (max-width: 991px) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .owl-controls {
+        @media (max-width: 991px) {
+            display: none;
+        }
+        .owl-nav {
+            display: flex;
+            justify-content: space-between;
+            i {
+                display: inline-block;
+                font-size: 13.5px;
+                padding: 15px;
+                background: $title-color;
+                color: $white;
+                border-radius: 2px;
+                @include transition;
+                &:hover {
+                    @include gradient($primary-color 0%, $primary-color2 100%);
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# End Project Details Area
 --------------------------------------------------------------*/

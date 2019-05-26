@@ -236,6 +236,10 @@
         outline: none;
         font-size: 14px;
         letter-spacing: 0.1px;
+        @media (max-width: 1199px) and (min-width: 992px) {
+            font-size: 13px;
+            margin: 36px 2px;
+        }
     }
     .primary-btn {
         padding: 0px 35px;
@@ -265,6 +269,7 @@
 }
 
 .nav-menu ul li a {
+    margin: 0;
     padding: 5px 10px;
     color: #333;
     transition: 0.3s;

@@ -1,0 +1,109 @@
+/*--------------------------------------------------------------
+# Start Contact Area
+--------------------------------------------------------------*/
+.contact-page-area {
+    .contact-wrap {
+        background: $white;
+        margin-bottom: 100px;
+    }
+
+    .contact-btns {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        padding: 40px;
+        color: $white;
+        margin-bottom: 30px;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .form-area {
+        .form-control {
+            &:focus {
+                box-shadow: none !important;
+                border-color: #ced4da !important;
+            }
+        }
+
+        input {
+            padding: 12px;
+        }
+
+        input,
+        textarea {
+            border-radius: 0;
+            font-size: 13px !important;
+            @include placeholder {
+                font-size: 13px;
+                color: #999999;
+            }
+        }
+
+        textarea {
+            height: 154px;
+            margin-top: 0px;
+            padding: 15px;
+        }
+
+    }
+
+    .address-wrap {
+        @media(max-width: 991px) {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 42px;
+            font-weight: 700;
+            color: $title-color;
+            margin-bottom: 50px;
+            @media(max-width: 991px) {
+                font-size: 35px;
+            }
+        }
+
+        .single-contact-address {
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 0;
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            h5 {
+                font-size: 20px;
+                font-weight: 700;
+                color: $title-color;
+                margin-bottom: 10px;
+            }
+            p {
+                margin-bottom: 0;
+            }
+
+            span {
+                font-size: 20px;
+                font-weight: 500;
+                color: $primary-color;
+                margin-right: 15px;
+            }
+
+            @media(max-width:1024px) and (min-width:990px) {
+                h5 {
+                    font-size: 14px;
+                }
+
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+/*--------------------------------------------------------------
+# End Contact Area
+--------------------------------------------------------------*/

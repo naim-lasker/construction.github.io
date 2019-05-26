@@ -145,13 +145,30 @@ $(document).ready(function() {
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
       $("#header").addClass("header-scrolled");
+      $("#back-top").addClass("back-top-animation");
     } else {
       $("#header").removeClass("header-scrolled");
+      $("#back-top").removeClass("back-top-animation");
     }
   });
 
-  //------- Owl Carusel  js --------//
+  /* ---------------------------------------------
+        scroll body to 0px on click Starts
+     --------------------------------------------- */
+  $("#back-top a").on("click", function() {
+    $("body,html").animate(
+      {
+        scrollTop: 0
+      },
+      1000
+    );
+    return false;
+  });
+  /* ---------------------------------------------
+    scroll body to 0px on click Ends
+  --------------------------------------------- */
 
+  //------- Testimonial Owl Carusel  js --------//
   $(".active-testimonial-carusel").owlCarousel({
     items: 2,
     loop: true,
@@ -165,37 +182,29 @@ $(document).ready(function() {
       0: {
         items: 1
       },
-      480: {
+      768: {
         items: 1
       },
-      768: {
+      1200: {
         items: 2
       }
     }
   });
 
-  $(".active-blog-carusel").owlCarousel({
-    items: 3,
+  //------- Project Work Owl Carusel  js --------//
+  $(".active-project-work-carusel").owlCarousel({
+    items: 1,
     loop: true,
-    margin: 30,
-    dots: true,
+    margin: 0,
     autoplayHoverPause: true,
     smartSpeed: 500,
+    nav: true,
+    dots: false,
     autoplay: true,
-    responsive: {
-      0: {
-        items: 1
-      },
-      480: {
-        items: 1
-      },
-      768: {
-        items: 2
-      },
-      961: {
-        items: 3
-      }
-    }
+    navText: [
+      "<i class='ti-angle-double-left mr-3'></i> Previous Project",
+      "Next Project <i class='ti-angle-double-right ml-3'></i>"
+    ]
   });
 
   //------- Google Map  js --------//

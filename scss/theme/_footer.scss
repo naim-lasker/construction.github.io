@@ -16,6 +16,9 @@
 
     .footer-top {
         padding: 120px 0;
+        @media (max-width: 767px) {
+            padding: 60px 0 40px;
+        }
     }
 
     .footer-nav {
@@ -37,6 +40,9 @@
         padding: 16px 0px;
         border-top: 1px solid rgba($white, 0.25);
         .footer-text {
+            @media(max-width:767px) {
+                text-align: center;
+            }
             a {
                 color: $primary-color;
             }
@@ -46,14 +52,19 @@
 
 
 .footer-social {
-    @media(max-width:768px) {
-        margin-top: 20px;
+    @media(max-width:767px) {
+        margin-top: 10px;
     }
     a {
         color: $white;
         font-size: 14px;
-        margin: 0px 15px;
+        margin-left: 25px;
         @include transition();
+        &:first-child {
+            @media(max-width:767px) {
+                margin-left: 0px;
+            }
+        }
 
         &:hover {
             color: $primary-color;
