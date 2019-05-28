@@ -52,6 +52,9 @@
     background-size: cover;
     min-height: 400px;
     position: relative;
+    @media(max-width: 767px) {
+        min-height: 375px;
+    }
     &:before {
         content: '';
         position: absolute;
@@ -62,8 +65,7 @@
         background: rgba(#2b2f6a, 0.6);
     }
     .banner-content {
-        margin-top: 110px;
-        padding: 50px 0px;
+        padding: 170px 0px;
         @media(max-width: 767px) {
             margin:120px 16px;
         }

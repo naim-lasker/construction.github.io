@@ -1,208 +1,91 @@
-
-
-.alert-msg {
-    color: #008000;
-}
-
-.overlay-bg {
-    background-color: rgba($black, .27);
-}
-
-
-
-//--------- Start Common Page Style For  -------------//
-.link-nav {
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-//--------- End Common Page Style For  -------------//
-/*
-################
-               Start Blog Home  Page style
-################
-*/
-
-
-.blog-page {
-    background: #f9f9ff;
-}
-
-.blog-header-content {
-    h1 {
-        max-width: 500px;
-        margin-left: auto;
-        margin-right: auto;
-        @media(max-width: 414px) {
-            font-size:30px;
-        }
-    }
-    p {
-        margin: 20px 0px;
+/*--------------------------------------------------------------
+# Start Blog Area
+--------------------------------------------------------------*/
+.latest-blog-area {
+    padding-bottom: 90px;
+    @media(max-width: 991px) {
+        padding-bottom: 50px;
     }
 }
 
-.top-category-widget-area {
-    .single-cat-widget {
-        .overlay-bg {
-            background: rgba(#000, .85);
-            margin: 7%;
-            @include transition();
-        }
-        position:relative;
-        text-align:center;
-        img {
-            width: 100%;
-        }
-        .content-details {
-            top: 32%;
-            left: 0;
-            right: 0;
-            margin-left: auto;
-            margin-right: auto;
-            color: $white;
-            bottom: 0px;
+.single-blog-post {
+    margin-bottom: 30px;
+    @include transition();
+    .blog-info {
+        padding: 35px 30px;
+        border: 1px solid $gray;
+        position: relative;
+        &:after {
+            content: "";
             position: absolute;
-            h4 {
-                color: $white;
-            }
-            span {
-                display: inline-block;
-                background: $white;
-                width: 60%;
-                height: 1%;
-            }
-        }
-        &:hover {
-            .overlay-bg {
-                background: rgba($primary-color, .85);
-                margin: 7%;
-                @include transition();
-            }
-        }
-        @media(max-width:991px) {
-            margin-bottom: 50px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-bottom: 1px solid transparent;
+            z-index: -1;
         }
     }
-}
-
-.post-content-area {
-    .single-post {
-        margin-bottom: 50px;
-        .meta-details {
-            text-align: right;
-            margin-top: 35px;
-            @media(max-width: 767px) {
-                text-align:left;
-            }
-            .tags {
-                margin-bottom: 30px;
-                li {
-                    display: inline-block;
-                    font-size: 14px;
-                    a {
-                        color: $black;
-                        @include transition();
-                        &:hover {
-                            color: $primary-color;
-                        }
-                    }
-                }
-            }
-            @media(max-width:1024px) {
-                margin-top: 0px;
+    .meta {
+        font-size: 13px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        @media(max-width: 575px) {
+            font-size: 12px;
+        }
+    }
+    .thumb {
+        overflow: hidden;
+    }
+    img {
+        overflow: hidden;
+        cursor: pointer;
+        @include transition();
+    }
+    h5 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        padding-bottom: 28px;
+        border-bottom: 1px solid $gray;
+        line-height: 1.5;
+        @include transition();
+        a {
+            color: $title-color;
+        }
+    }
+    &:hover {
+        box-shadow: 0px 20px 30px 0 rgba($title-color, 0.1);
+        .blog-info {
+            border-bottom: 1px solid $primary-color;
+            &:after {
+                border-bottom: 1px solid $primary-color;
             }
         }
-        .user-name,
-        .date,
-        .view,
-        .comments {
+        img {
+            transform: scale(1.2);
+        }
+        h5 {
             a {
-                color: $text-color;
-                margin-right: 10px;
-                @include transition();
-                &:hover {
-                    color: $primary-color;
-                }
-            }
-            span {
-                font-weight: 900;
-                color: $black;
+                color: $primary-color;
             }
         }
-        .feature-img {
-            img {
-                width: 100%;
-            }
-        }
-        .posts-title {
-            h3 {
-                margin: 20px 0px;
-            }
-        }
-        .excert {
-            margin-bottom: 20px;
-        }
-        .primary-btn {
-            background: $white !important;
-            color: $black !important;
-            @include transition();
-            border-radius: 0px !important;
-            &:hover {
-                background: $primary-color !important;
-                color: $white !important;
+        .primary-btn2 {
+            color: $primary-color;
+            i {
+                color: $primary-color;
+                left: 15px;
             }
         }
     }
 }
+/*--------------------------------------------------------------
+# End Blog Area
+--------------------------------------------------------------*/
 
-.blog-pagination {
-    padding-top: 60px;
-    padding-bottom: 120px;
-    .page-link {
-        border-radius: 0;
-    }
-    .page-item {
-        border: none;
-    }
-}
-
-.page-link {
-    background: transparent;
-    font-weight: 400;
-}
-
-.blog-pagination .page-item.active .page-link {
-    background-color: $primary-color;
-    border-color: transparent;
-}
-
-.blog-pagination .page-link {
-    position: relative;
-    display: block;
-    padding: 0.5rem 0.75rem;
-    margin-left: -1px;
-    line-height: 1.25;
-    color: $text-color;
-    border: none;
-}
-
-.blog-pagination .page-link span {
-    font-weight: 600;
-}
-
-.blog-pagination .page-item:last-child .page-link,
-.blog-pagination .page-item:first-child .page-link {
-    border-radius: 0;
-}
-
-.blog-pagination .page-link:hover {
-    color: #fff;
-    text-decoration: none;
-    background-color: $primary-color;
-    border-color: #eee;
-}
-
+/*--------------------------------------------------------------
+# Start Blog Side Area
+--------------------------------------------------------------*/
 .widget-wrap {
     background: #fafaff;
     padding: 20px 0px;
@@ -317,11 +200,6 @@
                     margin-bottom: 0px;
                 }
             }
-        }
-    }
-    .ads-widget {
-        img {
-            width: 100%;
         }
     }
     .post-category-widget {
@@ -453,19 +331,13 @@
         }
     }
 }
+/*--------------------------------------------------------------
+# End Blog Side Area
+--------------------------------------------------------------*/
 
-/*
-################
-               End Blog Home  Page style
-################
-*/
-
-/*
-################
-               Start Blog Details  Page style
-################
-*/
-
+/*--------------------------------------------------------------
+# Start Blog Details Area
+--------------------------------------------------------------*/
 .single-post-area {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -563,7 +435,13 @@
         }
     }
 }
+/*--------------------------------------------------------------
+# End Blog Details Area
+--------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Start Blog Comment Area
+--------------------------------------------------------------*/
 .comments-area {
     background: #fafaff;
     border: 1px solid #eee;
@@ -623,7 +501,13 @@
         }
     }
 }
+/*--------------------------------------------------------------
+# End Blog Comment Area
+--------------------------------------------------------------*/
 
+/*--------------------------------------------------------------
+# Start Blog Comment Form Area
+--------------------------------------------------------------*/
 .comment-form {
     text-align: center;
     background: #fafaff;
@@ -688,9 +572,7 @@
         }
     }
 }
+/*--------------------------------------------------------------
+# End Blog Comment Form Area
+--------------------------------------------------------------*/
 
-/*
-################
-               End Blog Details  Page style
-################
-*/

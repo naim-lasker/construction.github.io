@@ -87,7 +87,7 @@
     }
 
     h2 {
-        font-size: 41px;
+        font-size: 43px;
         font-weight: 700;
         color: $title-color;
         margin-bottom: 22px;
@@ -150,19 +150,21 @@
     }
 
     i {
+        position: relative;
         display: inline-block;
-        margin-left: 5px;
-        font-size: 10px;
+        left: 5px;
+        font-size: 11px;
         color: $white;
+        @include transition();
     }
 
     &:hover {
         background-position: right center;
         color: $white;
 
-        span {
+        i {
             color: $white;
-            right: 20px;
+            left: 15px;
         }
     }
 }
@@ -175,15 +177,20 @@
     @include transition();
 
     i {
+        position: relative;
         display: inline-block;
-        margin-left: 4px;
+        left: 4px;
         font-size: 10px;
         color: $text-color;
         @include transition();
     }
 
     &:hover {
-        color: $text-color;
+        color: $primary-color;
+        i {
+            color: $primary-color;
+            left: 15px;
+        }
     }
 }
 
