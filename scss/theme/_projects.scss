@@ -116,23 +116,6 @@
 
 .project-info {
     .project-right-text {
-        h4 {
-            font-size: 20px;
-            font-weight: 700;
-            color: $title-color;
-            position: relative;
-            margin-bottom: 49px;
-
-            &:after {
-                content: '';
-                position: absolute;
-                bottom: -15px;
-                left: 0;
-                width: 60px;
-                height: 2px;
-                background-color: $primary-color;
-            }
-        }
 
         .list-box {
             border: 1px solid $gray;
