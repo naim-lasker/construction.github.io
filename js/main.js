@@ -1,6 +1,11 @@
 $(document).ready(function() {
   "use strict";
 
+  //------- Preloader  js --------//
+  $(window).on("load", () => {
+    $('.prealoder-area').fadeOut();
+  });
+
   var window_width = $(window).width(),
     window_height = window.innerHeight,
     header_height = $(".default-header").height(),
