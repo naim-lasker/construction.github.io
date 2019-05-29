@@ -16,6 +16,9 @@
     background: $white;
     margin-bottom: 30px;
     @include transition();
+    @media(max-width: 1199px) and (min-width: 992px) {
+        padding: 36px 15px;
+    }
     @media(max-width: 768px) {
         padding: 30px 18px;
     }
@@ -34,6 +37,9 @@
         color: $title-color;
         margin-top: 25px;
         margin-bottom: 18px;
+        @media(max-width: 1199px) and (min-width: 992px) {
+            font-size: 18px;
+        }
     }
     p {
         margin-bottom: 21px;

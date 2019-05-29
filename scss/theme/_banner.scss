@@ -2,25 +2,85 @@
 # Start Banner Area
 --------------------------------------------------------------*/
 .home-banner-area {
-    background: url(../img/home-banner-bg.jpg) no-repeat center;
-    background-size: cover;
     position: relative;
-    &:before {
-        content: '';
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        background: rgba(#02041d, 0.8);
+    &.owl-carousel {
+        .owl-item .owl-lazy {
+            background-size: cover;
+            position: relative;
+    
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background: rgba(#02041d, 0.8);
+            }
+        }
     }
+    .owl-dots {
+        position: absolute;
+        top: 50%;
+        right: 68px;
+        @include transform(translateY(-50%));
+        @media (max-width: 991px) {
+            display: none!important;
+        }
+        .owl-dot {
+            height: 10px;
+            width: 10px;
+            background: #dfdfdf;
+            border-radius: 10px;
+            margin-bottom: 22px;
+            &.active {
+                background: $primary-color;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
     .fullscreen {
         height: 800px;
-        @include media-breakpoint-down (sm) {
+
+        @include media-breakpoint-down(sm) {
             height: 600px;
         }
     }
+    &.home-banner-area2 {
+        background: url(../img/home-banner-bg4.jpg) no-repeat center;
+        background-size: cover;
+        position: relative;
+    
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background: rgba(#02041d, 0.8);
+            }
+    }
+    &.home-banner-area3 {
+        background: url(../img/home-banner-bg5.jpg) no-repeat center;
+        background-size: cover;
+        position: relative;
+    
+            &:before {
+                content: '';
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background: rgba(#02041d, 0.8);
+            }
+    }
 }
+
 .banner-content {
     h4 {
         font-size: 18px;
@@ -28,33 +88,38 @@
         color: $primary-color;
         margin-bottom: 30px;
     }
+
     h2 {
         color: $white;
         font-size: 50px;
         line-height: 60px;
         margin-bottom: 40px;
-        @media(max-width: 767px) {
+
+        @media (max-width: 767px) {
             font-size: 30px;
             line-height: 40px;
         }
     }
+
     p {
         max-width: 900px;
     }
+
     .primary-btn {
-      line-height: 44px;
+        line-height: 44px;
     }
 }
-
 
 .banner-area {
     background: url(../img/banner-bg.jpg) no-repeat center;
     background-size: cover;
     min-height: 400px;
     position: relative;
-    @media(max-width: 767px) {
+
+    @media (max-width: 767px) {
         min-height: 375px;
     }
+
     &:before {
         content: '';
         position: absolute;
@@ -64,23 +129,29 @@
         right: 0;
         background: rgba(#2b2f6a, 0.6);
     }
+
     .banner-content {
         padding: 170px 0px;
-        @media(max-width: 767px) {
-            margin:120px 16px;
+
+        @media (max-width: 767px) {
+            margin: 0px 30px;
         }
+
         h1 {
             font-size: 50px;
             font-weight: 700;
-            @media ( max-width: 768px) {
-                font-size:35px;
+
+            @media (max-width: 768px) {
+                font-size: 35px;
             }
-            @media ( max-width: 414px) {
+
+            @media (max-width: 414px) {
                 font-size: 30px;
             }
         }
     }
 }
+
 /*--------------------------------------------------------------
 # End Banner Area
 --------------------------------------------------------------*/

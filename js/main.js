@@ -169,6 +169,27 @@ $(document).ready(function() {
   --------------------------------------------- */
 
   //------- Testimonial Owl Carusel  js --------//
+  $(".active-banner-carusel").owlCarousel({
+    items: 1,
+    loop: true,
+    margin: 30,
+    autoplayHoverPause: true,
+    smartSpeed: 500,
+    nav: false,
+    dots: true,
+    // autoplay: true,
+    lazyLoad:true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      1200: {
+        items: 1
+      }
+    }
+  });
+
+  //------- Testimonial Owl Carusel  js --------//
   $(".active-testimonial-carusel").owlCarousel({
     items: 2,
     loop: true,

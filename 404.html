@@ -73,7 +73,14 @@
         </div>
         <nav id="nav-menu-container">
           <ul class="nav-menu">
-            <li><a href="index.html">home</a></li>
+            <li class="menu-has-children">
+                <a href="#">Home</a>
+                <ul>
+                  <li><a href="index.html">Home 1</a></li>
+                  <li><a href="index2.html">Home 2</a></li>
+                  <li><a href="index3.html">Home 3</a></li>
+                </ul>
+              </li>
             <li><a href="about.html">about</a></li>
             <li><a href="team.html">team</a></li>
             <li class="menu-has-children menu-active">
@@ -119,16 +126,48 @@
   <!--######## End banner Area ########-->
 
   <!--######## Start Error Area ########-->
-  <section class="error-area section-gap">
+  <section class="error-area">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h1>Page not found</h1>
+          <h1 class="error-heading">Page <span>not</span> found</h1>
+          <p>It looks like nothing was found at this location</p>
+          <div class="text-center mt-5">
+            <a href="index.html" class="primary-btn">
+                Back Home
+              <i class="ti-angle-double-right"></i>
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <!--######## End Error Area ########-->
+
+  <!--######## Start Newsletter Area ########-->
+  <section class="newsletter-area">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-md-0 mb-4">
+          <div class="newsletter-inner">
+            <h1>Join Our Newsletter</h1>
+            <p>We will not spam you</p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+          <aside class="newsletter-widget">
+            <form class="relative">
+              <div class="input-group d-flex justify-content-lg-end justify-content-center">
+                <input name="email" placeholder="Enter email address" required="" type="email">
+                <button class="newsletter-btn">Subscribe Now</button>
+              </div>
+            </form>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--######## End Newsletter Area ########-->
 
   <!-- ####################### Start Scroll to Top Area ####################### -->
   <div id="back-top">

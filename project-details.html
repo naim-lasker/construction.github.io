@@ -73,7 +73,14 @@
 				</div>
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
-						<li><a href="index.html">home</a></li>
+						<li class="menu-has-children">
+							<a href="#">Home</a>
+							<ul>
+								<li><a href="index.html">Home 1</a></li>
+								<li><a href="index2.html">Home 2</a></li>
+								<li><a href="index3.html">Home 3</a></li>
+							</ul>
+						</li>
 						<li><a href="about.html">about</a></li>
 						<li><a href="team.html">team</a></li>
 						<li class="menu-has-children menu-active">
@@ -236,7 +243,7 @@
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<aside class="newsletter-widget">
 						<form class="relative">
-							<div class="input-group d-flex justify-content-lg-end justify-content-md-center">
+							<div class="input-group d-flex justify-content-lg-end justify-content-center">
 								<input name="email" placeholder="Enter email address" required="" type="email">
 								<button class="newsletter-btn">Subscribe Now</button>
 							</div>
