@@ -1,4 +1,4 @@
-$(document).ready(function() {
+(function($) {
   "use strict";
 
   //------- Preloader  js --------//
@@ -65,7 +65,7 @@ $(document).ready(function() {
       $("#mobile-body-overly").toggle();
     });
 
-    $(document).click(function(e) {
+    $(document).on("click", function(e) {
       var container = $("#mobile-nav, #mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($("body").hasClass("mobile-nav-active")) {
@@ -428,4 +428,4 @@ $(document).ready(function() {
       });
     }
   }
-});
+})(jQuery);
