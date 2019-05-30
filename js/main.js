@@ -177,7 +177,7 @@
   $(".active-banner-carusel").owlCarousel({
     items: 1,
     loop: true,
-    margin: 30,
+    margin: 0,
     autoplayHoverPause: true,
     smartSpeed: 500,
     nav: false,
@@ -203,7 +203,7 @@
     smartSpeed: 500,
     nav: false,
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     responsive: {
       0: {
         items: 1
