@@ -58,12 +58,29 @@
 }
 
 .single-testimonial {
-    background-color: $white;
-    border: 1px solid #eeeeee;
-    padding: 50px;
+    background: $white;
+    border-radius: 5px;
+    padding: 50px 44px;
+    position: relative;
     @include transition();
     @media (max-width: 480px) {
         padding: 30px 20px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 56%;
+        right: 48px;
+        @include transform(translateY(-50%));
+        width: 80px;
+        height: 93px;
+        background: url(../img/testimonial/quote.png) no-repeat;
+        @media (max-width: 1199px) and (min-width: 768px) {
+            right: 80px;
+        }
+        @media (max-width: 767px) {
+            display: none;
+        }
     }
 
     &:hover {
@@ -80,7 +97,7 @@
             content: '';
             position: absolute;
             left: 0px;
-            top: -51px;
+            top: -50px;
             width: 150px;
             height: 2px;
             background: $primary-color;
@@ -102,6 +119,8 @@
     }
     p {
         margin-bottom: 0;
+        position: relative;
+        z-index: 99;
     }
 
     &:hover {

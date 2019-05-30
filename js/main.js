@@ -182,7 +182,7 @@
     smartSpeed: 500,
     nav: false,
     dots: true,
-    // autoplay: true,
+    autoplay: true,
     lazyLoad:true,
     responsive: {
       0: {
@@ -203,7 +203,7 @@
     smartSpeed: 500,
     nav: false,
     dots: true,
-    autoplay: true,
+    // autoplay: true,
     responsive: {
       0: {
         items: 1

@@ -142,7 +142,7 @@
     position: relative;
     display: inline-block;
     left: 5px;
-    font-size: 11px;
+    font-size: 10px;
     color: #fff;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -153,7 +153,7 @@
     color: #fff; }
     .primary-btn:hover i {
       color: #fff;
-      left: 15px; }
+      left: 11px; }
 
 .primary-btn2 {
   text-decoration: none;
@@ -1278,9 +1278,10 @@ body.mobile-nav-active #mobile-nav-toggle {
         transition: all 0.3s ease 0s; }
 
 .single-testimonial {
-  background-color: #fff;
-  border: 1px solid #eeeeee;
-  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+  padding: 50px 44px;
+  position: relative;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -1288,6 +1289,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   @media (max-width: 480px) {
     .single-testimonial {
       padding: 30px 20px; } }
+  .single-testimonial:after {
+    content: '';
+    position: absolute;
+    top: 56%;
+    right: 48px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 80px;
+    height: 93px;
+    background: url(../img/testimonial/quote.png) no-repeat; }
+    @media (max-width: 1199px) and (min-width: 768px) {
+      .single-testimonial:after {
+        right: 80px; } }
+    @media (max-width: 767px) {
+      .single-testimonial:after {
+        display: none; } }
   .single-testimonial:hover {
     cursor: pointer; }
   .single-testimonial .thumb {
@@ -1300,7 +1320,7 @@ body.mobile-nav-active #mobile-nav-toggle {
       content: '';
       position: absolute;
       left: 0px;
-      top: -51px;
+      top: -50px;
       width: 150px;
       height: 2px;
       background: #f95902; }
@@ -1318,7 +1338,9 @@ body.mobile-nav-active #mobile-nav-toggle {
       font-size: 14px;
       font-weight: 400; }
   .single-testimonial p {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    position: relative;
+    z-index: 99; }
   .single-testimonial:hover h4 {
     color: #f95902;
     cursor: pointer; }
@@ -1484,7 +1506,7 @@ body.mobile-nav-active #mobile-nav-toggle {
       background: #14303a;
       box-shadow: none;
       font-size: 14px;
-      font-weight: 400;
+      font-weight: 500;
       text-align: center;
       color: #fff;
       border: 0;
@@ -1658,6 +1680,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 35px 30px;
     border: 1px solid #e9ebee;
     position: relative; }
+    @media (max-width: 575px) {
+      .single-blog-post .blog-info {
+        padding: 35px 15px; } }
     .single-blog-post .blog-info:after {
       content: "";
       position: absolute;
@@ -1671,6 +1696,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 0.5px; }
+    @media (max-width: 1199px) and (min-width: 992px) {
+      .single-blog-post .meta {
+        font-size: 11px; } }
     @media (max-width: 575px) {
       .single-blog-post .meta {
         font-size: 12px; } }
@@ -1772,7 +1800,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   .sidebar-widgets .popular-post-widget .single-post-list .details {
     margin-left: 12px; }
     .sidebar-widgets .popular-post-widget .single-post-list .details p {
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       font-size: 13px;
       letter-spacing: 0.5px;
       text-transform: uppercase;
@@ -1780,10 +1808,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     .sidebar-widgets .popular-post-widget .single-post-list .details h4 {
       margin-bottom: 0px;
       font-weight: 500;
-      color: #14303a; }
+      color: #14303a;
+      line-height: 28px; }
       @media (max-width: 575px) {
         .sidebar-widgets .popular-post-widget .single-post-list .details h4 {
-          font-size: 15px; } }
+          font-size: 15px;
+          line-height: 24px; } }
   .sidebar-widgets .popular-post-widget .single-post-list:hover h4 {
     color: #f95902; }
 .sidebar-widgets .post-category-widget .cat-list li {
@@ -1837,7 +1867,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 .sidebar-widgets .instagram-widget ul li {
   display: inline-block;
   width: 32%;
-  padding-bottom: 3px; }
+  padding-bottom: 3px;
+  position: relative; }
   @media (max-width: 991px) {
     .sidebar-widgets .instagram-widget ul li {
       width: 16%; } }
@@ -1849,6 +1880,36 @@ body.mobile-nav-active #mobile-nav-toggle {
     .sidebar-widgets .instagram-widget ul li {
       width: 32%;
       margin-bottom: 0px; } }
+  .sidebar-widgets .instagram-widget ul li:after {
+    content: "\e73d";
+    font-family: 'themify';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #f95902;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .sidebar-widgets .instagram-widget ul li img {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .sidebar-widgets .instagram-widget ul li:hover {
+    cursor: pointer; }
+    .sidebar-widgets .instagram-widget ul li:hover:after {
+      opacity: 1; }
+    .sidebar-widgets .instagram-widget ul li:hover img {
+      opacity: .2; }
 
 /*--------------------------------------------------------------
 # End Blog Side Area
@@ -1868,6 +1929,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.3s ease 0s; }
   .single-post-area .meta-tags a:hover {
     color: #f95902; }
+  .single-post-area .meta-tags a:last-child {
+    margin-right: 0; }
 .single-post-area .deatils-heading {
   max-width: 665px;
   font-size: 30px;
@@ -2099,7 +2162,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   border-radius: 3px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   padding: 6px 20px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease 0s;
