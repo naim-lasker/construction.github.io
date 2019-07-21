@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
   "use strict";
 
   //------- Preloader  js --------//
@@ -6,9 +6,9 @@
     $('.prealoder-area').fadeOut();
   });
 
-  var window_width = $(window).width(),
-    window_height = window.innerHeight,
+  var window_height = window.innerHeight,
     header_height = $(".default-header").height(),
+    header = $("#header"),
     fitscreen = window_height - header_height;
 
   // $(".fullscreen").css("height", window_height)
@@ -48,7 +48,7 @@
       .find(".menu-has-children")
       .prepend('<i class="ti-angle-down"></i>');
 
-    $(document).on("click", ".menu-has-children i", function(e) {
+    $(document).on("click", ".menu-has-children i", function (e) {
       $(this)
         .next()
         .toggleClass("menu-item-active");
@@ -59,13 +59,13 @@
       $(this).toggleClass("ti-angle-up ti-angle-down");
     });
 
-    $(document).on("click", "#mobile-nav-toggle", function(e) {
+    $(document).on("click", "#mobile-nav-toggle", function (e) {
       $("body").toggleClass("mobile-nav-active");
       $("#mobile-nav-toggle i").toggleClass("ti-close ti-menu");
       $("#mobile-body-overly").toggle();
     });
 
-    $(document).on("click", function(e) {
+    $(document).on("click", function (e) {
       var container = $("#mobile-nav, #mobile-nav-toggle");
       if (!container.is(e.target) && container.has(e.target).length === 0) {
         if ($("body").hasClass("mobile-nav-active")) {
@@ -81,20 +81,20 @@
 
   //------- Smooth Scroll  js --------//
 
-  $(".nav-menu a, #mobile-nav a, .scrollto").on("click", function() {
+  $(".nav-menu a, #mobile-nav a, .scrollto").on("click", function () {
     if (
       location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
+      this.pathname.replace(/^\//, "") &&
       location.hostname == this.hostname
     ) {
       var target = $(this.hash);
       if (target.length) {
         var top_space = 0;
 
-        if ($("#header").length) {
-          top_space = $("#header").outerHeight();
+        if ($(header).length) {
+          top_space = $(header).outerHeight();
 
-          if (!$("#header").hasClass("header-fixed")) {
+          if (!$(header).hasClass("header-fixed")) {
             top_space = top_space;
           }
         }
@@ -124,11 +124,10 @@
     }
   });
 
-  $(document).ready(function() {
+  $(document).on("ready", function () {
     $("html, body").hide();
-
     if (window.location.hash) {
-      setTimeout(function() {
+      setTimeout(function () {
         $("html, body")
           .scrollTop(0)
           .show();
@@ -147,12 +146,12 @@
 
   //------- Header Scroll Class  js --------//
 
-  $(window).scroll(function() {
+  $(window).on("scroll", function () {
     if ($(this).scrollTop() > 100) {
-      $("#header").addClass("header-scrolled");
+      $(header).addClass("header-scrolled");
       $("#back-top").addClass("back-top-animation");
     } else {
-      $("#header").removeClass("header-scrolled");
+      $(header).removeClass("header-scrolled");
       $("#back-top").removeClass("back-top-animation");
     }
   });
@@ -160,7 +159,7 @@
   /* ---------------------------------------------
         scroll body to 0px on click Starts
      --------------------------------------------- */
-  $("#back-top a").on("click", function() {
+  $("#back-top a").on("click", function () {
     $("body,html").animate(
       {
         scrollTop: 0
@@ -183,7 +182,7 @@
     nav: false,
     dots: true,
     autoplay: true,
-    lazyLoad:true,
+    lazyLoad: true,
     responsive: {
       0: {
         items: 1

@@ -2,11 +2,6 @@
 # Start Project Area
 --------------------------------------------------------------*/
 .project-area {
-    margin-bottom: 180px;
-
-    @media (max-width: 991px) {
-        margin-bottom: 80px;
-    }
 
     .primary-btn {
         line-height: 44px;
@@ -20,11 +15,13 @@
             margin-right: -100px;
             margin-bottom: -50px;
             z-index: 9;
+            box-shadow: 0px 20px 30px 0 rgba($title-color, 0.16);
             @include transition();
 
             @media (max-width: 991px) {
                 margin-right: 0px;
                 padding: 20px 0 40px;
+                box-shadow: none;
             }
 
             h2 {
@@ -43,17 +40,16 @@
                 margin-top: 35px;
             }
         }
-        &:hover {
-            .main-title {
-                box-shadow: 0px 20px 30px 0 rgba($title-color, 0.16);
-                @media (max-width: 991px) {
-                    box-shadow: none;
-                }
-            }
-        }
     }
 
     .bottom-part {
+        padding: 180px 0;
+        @media (max-width: 991px) {
+            padding: 130px 0;
+        }
+        @media (max-width: 767px) {
+            padding: 90px 0;
+        }
         .main-title {
             padding: 90px 60px 90px 70px;
             background: $white;
@@ -61,6 +57,7 @@
             margin-left: -100px;
             margin-bottom: -50px;
             z-index: 9;
+            box-shadow: 0px 20px 30px 0 rgba($title-color, 0.16);
             @include transition();
 
             @media (max-width: 991px) {
@@ -68,6 +65,7 @@
                 padding: 40px 0 0;
                 box-shadow: none;
                 margin-bottom: 0;
+                box-shadow: none;
             }
 
             h2 {
@@ -84,14 +82,6 @@
 
             .primary-btn {
                 margin-top: 35px;
-            }
-        }
-        &:hover {
-            .main-title {
-                box-shadow: 0px 20px 30px 0 rgba($title-color, 0.16);
-                @media (max-width: 991px) {
-                    box-shadow: none;
-                }
             }
         }
     }
