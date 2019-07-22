@@ -4,107 +4,64 @@
 /* Tablet Layout: 768px */
 /* Mobile Layout: 320px */
 /* Wide Mobile Layout: 480px */
-/* line 1, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .section-gap {
-  padding: 130px 0px;
-}
+  padding: 130px 0px; }
+  @media (max-width: 991px) {
+    .section-gap {
+      padding: 80px 0px; } }
 
-@media (max-width: 991px) {
-  /* line 1, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-  .section-gap {
-    padding: 80px 0px;
-  }
-}
-
-/* line 9, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .section-gap-top {
-  padding-top: 130px;
-}
+  padding-top: 130px; }
+  @media (max-width: 991px) {
+    .section-gap-top {
+      padding-top: 80px; } }
 
-@media (max-width: 991px) {
-  /* line 9, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-  .section-gap-top {
-    padding-top: 80px;
-  }
-}
-
-/* line 17, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .section-gap-bottom {
-  padding-bottom: 130px;
-}
+  padding-bottom: 130px; }
+  @media (max-width: 991px) {
+    .section-gap-bottom {
+      padding-bottom: 80px; } }
 
-@media (max-width: 991px) {
-  /* line 17, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-  .section-gap-bottom {
-    padding-bottom: 80px;
-  }
-}
-
-/* line 25, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .heading-title {
   font-size: 20px;
   font-weight: 700;
   color: #14303a;
   position: relative;
-  margin-bottom: 49px;
-}
+  margin-bottom: 49px; }
+  .heading-title:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #f95902; }
 
-/* line 32, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.heading-title:after {
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  left: 0;
-  width: 60px;
-  height: 2px;
-  background-color: #f95902;
-}
-
-/* line 43, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .main-title {
-  margin-bottom: 90px;
-}
-
-@media (max-width: 991px) {
-  /* line 43, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-  .main-title {
-    margin-bottom: 40px;
-  }
-}
-
-/* line 50, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.main-title h3 {
-  color: #f95902;
-  font-size: 14px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 15px;
-}
-
-/* line 59, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.main-title h2 {
-  font-size: 42px;
-  font-weight: 700;
-  color: #14303a;
-  margin-bottom: 15px;
-}
-
-@media (max-width: 767px) {
-  /* line 59, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
+  margin-bottom: 90px; }
+  @media (max-width: 991px) {
+    .main-title {
+      margin-bottom: 40px; } }
+  .main-title h3 {
+    color: #f95902;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px; }
   .main-title h2 {
-    font-size: 30px;
-  }
-}
+    font-size: 42px;
+    font-weight: 700;
+    color: #14303a;
+    margin-bottom: 15px; }
+    @media (max-width: 767px) {
+      .main-title h2 {
+        font-size: 30px; } }
+  .main-title p {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 0px; }
 
-/* line 70, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.main-title p {
-  font-size: 14px;
-  color: #777777;
-  margin-bottom: 0px;
-}
-
-/* line 78, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .main-title2 h3 {
   color: #888c8e;
   font-size: 14px;
@@ -113,79 +70,46 @@
   letter-spacing: 0.7px;
   margin-bottom: 18px;
   position: relative;
-  padding-left: 70px;
-}
-
-@media (max-width: 991px) {
-  /* line 78, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-  .main-title2 h3 {
-    padding-left: 0px;
-  }
-}
-
-/* line 92, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.main-title2 h3:before {
-  content: '';
-  position: absolute;
-  top: 7px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background: #f95902;
-}
-
-@media (max-width: 991px) {
-  /* line 92, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
+  padding-left: 70px; }
+  @media (max-width: 991px) {
+    .main-title2 h3 {
+      padding-left: 0px; } }
   .main-title2 h3:before {
-    display: none;
-  }
-}
-
-/* line 107, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #f95902; }
+    @media (max-width: 991px) {
+      .main-title2 h3:before {
+        display: none; } }
 .main-title2 h2 {
   font-size: 45px;
   font-weight: 700;
   color: #14303a;
-  margin-bottom: 22px;
-}
-
-@media (max-width: 1630px) {
-  /* line 107, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-  .main-title2 h2 {
-    font-size: 38px;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 107, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-  .main-title2 h2 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-
-/* line 123, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
+  margin-bottom: 22px; }
+  @media (max-width: 1630px) {
+    .main-title2 h2 {
+      font-size: 38px; } }
+  @media (max-width: 767px) {
+    .main-title2 h2 {
+      font-size: 30px;
+      line-height: 40px; } }
 .main-title2 .color-text {
   font-size: 20px;
   font-weight: 400;
   font-style: italic;
   color: #f95902;
-  margin-bottom: 22px;
-}
-
-/* line 131, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
+  margin-bottom: 22px; }
 .main-title2 .normal-text {
-  max-width: 489px;
-}
-
-/* line 135, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
+  max-width: 489px; }
 .main-title2 p {
   font-size: 15px;
   color: #666666;
-  margin-bottom: 0px;
-}
+  margin-bottom: 0px; }
 
-/* line 142, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .primary-btn {
   background: -webkit-linear-gradient(to right, #ffbd4a 0%, #f95902 51%, #ffbd4a 100%);
   background: -moz-linear-gradient(to right, #ffbd4a 0%, #f95902 51%, #ffbd4a 100%);
@@ -207,48 +131,30 @@
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
+  transition: all 0.3s ease 0s; }
+  @media (max-width: 575px) {
+    .primary-btn {
+      line-height: 40px;
+      padding: 0px 25px; } }
+  .primary-btn:focus {
+    outline: none; }
+  .primary-btn i {
+    position: relative;
+    display: inline-block;
+    left: 5px;
+    font-size: 10px;
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .primary-btn:hover {
+    background-position: right center;
+    color: #fff; }
+    .primary-btn:hover i {
+      color: #fff;
+      left: 11px; }
 
-@media (max-width: 575px) {
-  /* line 142, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-  .primary-btn {
-    line-height: 40px;
-    padding: 0px 25px;
-  }
-}
-
-/* line 166, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.primary-btn:focus {
-  outline: none;
-}
-
-/* line 170, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.primary-btn i {
-  position: relative;
-  display: inline-block;
-  left: 5px;
-  font-size: 10px;
-  color: #fff;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 179, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.primary-btn:hover {
-  background-position: right center;
-  color: #fff;
-}
-
-/* line 183, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.primary-btn:hover i {
-  color: #fff;
-  left: 11px;
-}
-
-/* line 190, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .primary-btn2 {
   text-decoration: none;
   font-size: 14px;
@@ -257,43 +163,30 @@
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
+  transition: all 0.3s ease 0s; }
+  .primary-btn2 i {
+    position: relative;
+    display: inline-block;
+    left: 4px;
+    font-size: 10px;
+    color: #777777;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .primary-btn2:hover {
+    color: #f95902; }
+    .primary-btn2:hover i {
+      color: #f95902;
+      left: 15px; }
 
-/* line 197, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.primary-btn2 i {
-  position: relative;
-  display: inline-block;
-  left: 4px;
-  font-size: 10px;
-  color: #777777;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 206, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.primary-btn2:hover {
-  color: #f95902;
-}
-
-/* line 208, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-.primary-btn2:hover i {
-  color: #f95902;
-  left: 15px;
-}
-
-/* line 215, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .overlay {
   position: absolute;
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0;
-}
+  bottom: 0; }
 
-/* line 224, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 #back-top {
   position: fixed;
   right: 2%;
@@ -304,53 +197,34 @@
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 232, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-#back-top a {
-  background: #f95902;
-  display: block;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 5px;
-  padding: 8px;
-}
-
-@media (max-width: 767px) {
-  /* line 232, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
+  transition: all 0.3s ease 0s; }
   #back-top a {
-    width: 30px;
-    height: 30px;
-    padding: 4px;
-  }
-}
+    background: #f95902;
+    display: block;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 8px; }
+    @media (max-width: 767px) {
+      #back-top a {
+        width: 30px;
+        height: 30px;
+        padding: 4px; } }
+    #back-top a i {
+      font-size: 16px;
+      color: #fff; }
+    #back-top a:hover {
+      box-shadow: 0 8px 12px rgba(233, 235, 238, 0.4); }
 
-/* line 245, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-#back-top a i {
-  font-size: 16px;
-  color: #fff;
-}
-
-/* line 249, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
-#back-top a:hover {
-  box-shadow: 0 8px 12px rgba(233, 235, 238, 0.4);
-}
-
-/* line 255, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .back-top-animation {
-  opacity: 1 !important;
-}
+  opacity: 1 !important; }
 
-/* line 262, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .prealoder-area {
   min-height: 100vh;
   background: #fff;
-  position: relative;
-}
+  position: relative; }
 
-/* line 267, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .sk-folding-cube {
   position: absolute;
   top: 50%;
@@ -362,10 +236,8 @@
   transform: translate(-50%, -50%) rotateZ(45deg);
   margin: 20px auto;
   width: 40px;
-  height: 40px;
-}
+  height: 40px; }
 
-/* line 277, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .sk-folding-cube .sk-cube {
   float: left;
   width: 50%;
@@ -373,10 +245,8 @@
   position: relative;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
+  transform: scale(1.1); }
 
-/* line 286, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .sk-folding-cube .sk-cube:before {
   content: '';
   position: absolute;
@@ -389,181 +259,129 @@
   animation: sk-foldCubeAngle 2.4s infinite linear both;
   -webkit-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
-  transform-origin: 100% 100%;
-}
+  transform-origin: 100% 100%; }
 
-/* line 300, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .sk-folding-cube .sk-cube2 {
   -webkit-transform: scale(1.1) rotateZ(90deg);
-  transform: scale(1.1) rotateZ(90deg);
-}
+  transform: scale(1.1) rotateZ(90deg); }
 
-/* line 304, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .sk-folding-cube .sk-cube3 {
   -webkit-transform: scale(1.1) rotateZ(180deg);
-  transform: scale(1.1) rotateZ(180deg);
-}
+  transform: scale(1.1) rotateZ(180deg); }
 
-/* line 308, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .sk-folding-cube .sk-cube4 {
   -webkit-transform: scale(1.1) rotateZ(270deg);
-  transform: scale(1.1) rotateZ(270deg);
-}
+  transform: scale(1.1) rotateZ(270deg); }
 
-/* line 312, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .sk-folding-cube .sk-cube2:before {
   -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s;
-}
+  animation-delay: 0.3s; }
 
-/* line 316, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .sk-folding-cube .sk-cube3:before {
   -webkit-animation-delay: 0.6s;
-  animation-delay: 0.6s;
-}
+  animation-delay: 0.6s; }
 
-/* line 320, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_predefine.scss */
 .sk-folding-cube .sk-cube4:before {
   -webkit-animation-delay: 0.9s;
-  animation-delay: 0.9s;
-}
+  animation-delay: 0.9s; }
 
 @-webkit-keyframes sk-foldCubeAngle {
   0%, 10% {
     -webkit-transform: perspective(140px) rotateX(-180deg);
     transform: perspective(140px) rotateX(-180deg);
-    opacity: 0;
-  }
+    opacity: 0; }
   25%, 75% {
     -webkit-transform: perspective(140px) rotateX(0deg);
     transform: perspective(140px) rotateX(0deg);
-    opacity: 1;
-  }
+    opacity: 1; }
   90%, 100% {
     -webkit-transform: perspective(140px) rotateY(180deg);
     transform: perspective(140px) rotateY(180deg);
-    opacity: 0;
-  }
-}
-
+    opacity: 0; } }
 @keyframes sk-foldCubeAngle {
   0%, 10% {
     -webkit-transform: perspective(140px) rotateX(-180deg);
     transform: perspective(140px) rotateX(-180deg);
-    opacity: 0;
-  }
+    opacity: 0; }
   25%, 75% {
     -webkit-transform: perspective(140px) rotateX(0deg);
     transform: perspective(140px) rotateX(0deg);
-    opacity: 1;
-  }
+    opacity: 1; }
   90%, 100% {
     -webkit-transform: perspective(140px) rotateY(180deg);
     transform: perspective(140px) rotateY(180deg);
-    opacity: 0;
-  }
-}
-
+    opacity: 0; } }
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
-/* line 5, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #f95902;
-  color: #fff;
-}
+  color: #fff; }
 
-/* line 9, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 ::selection {
   background-color: #f95902;
-  color: #fff;
-}
+  color: #fff; }
 
-/* line 13, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #777777;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
-/* line 17, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #777777;
   opacity: 1;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
-/* line 22, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #777777;
   opacity: 1;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
-/* line 27, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #777777;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
-/* line 31, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #777777;
-  font-weight: 300;
-}
+  font-weight: 300; }
 
-/* line 35, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 body {
   color: #777777;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 27px;
-  position: relative;
-}
+  position: relative; }
 
-/* line 43, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 ol, ul {
   margin: 0;
   padding: 0;
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 48, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 select {
-  display: block;
-}
+  display: block; }
 
-/* line 51, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 figure {
-  margin: 0;
-}
+  margin: 0; }
 
-/* line 55, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 a {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
+  transition: all 0.3s ease 0s; }
 
-/* line 59, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 iframe {
-  border: 0;
-}
+  border: 0; }
 
-/* line 63, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 a, a:focus, a:hover {
   text-decoration: none;
-  outline: 0;
-}
+  outline: 0; }
 
-/* line 67, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 .btn.active.focus,
 .btn.active:focus,
 .btn.focus,
@@ -571,369 +389,230 @@ a, a:focus, a:hover {
 .btn:active:focus,
 .btn:focus {
   text-decoration: none;
-  outline: 0;
-}
+  outline: 0; }
 
-/* line 77, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 h1, h2,
 h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   color: #14303a;
   line-height: 1.2;
   margin: 0;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
-/* line 85, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 h3,
 h4 {
   font-family: "Roboto", sans-serif;
   color: #14303a;
   line-height: 1.2;
   margin: 0;
-  font-weight: 500;
-}
+  font-weight: 500; }
 
-/* line 93, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 h1 {
-  font-size: 36px;
-}
+  font-size: 36px; }
 
-/* line 94, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 h2 {
-  font-size: 30px;
-}
+  font-size: 30px; }
 
-/* line 95, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 h3 {
-  font-size: 24px;
-}
+  font-size: 24px; }
 
-/* line 96, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 h4 {
-  font-size: 18px;
-}
+  font-size: 18px; }
 
-/* line 97, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 h5 {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
-/* line 98, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_reset.scss */
 h6 {
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
-/* line 5, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .header-top {
   font-size: 12px;
   padding: 0px;
   height: 40px;
   line-height: 40px;
-  background-color: #222833;
-}
+  background-color: #222833; }
+  .header-top a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px; }
+    .header-top a i {
+      color: #e9ebee; }
+  .header-top .header-top-right-list {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto; }
+    .header-top .header-top-right-list > li:not(:last-child) a {
+      padding-right: 10px;
+      border-right: 1px solid #e9ebee; }
+    .header-top .header-top-right-list .nice-select {
+      background: transparent;
+      border: 0;
+      font-size: 12px; }
+      .header-top .header-top-right-list .nice-select:after {
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff; }
+      .header-top .header-top-right-list .nice-select:hover .current {
+        color: #f95902; }
+      .header-top .header-top-right-list .nice-select .current {
+        color: #fff;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
+  .header-top .header-top-right {
+    text-align: right; }
+    .header-top .header-top-right i {
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    .header-top .header-top-right a {
+      margin-left: 8px;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    .header-top .header-top-right a:hover {
+      color: #f95902; }
+      .header-top .header-top-right a:hover i {
+        color: #f95902; }
+  .header-top .header-top-left {
+    display: inline-block; }
+    .header-top .header-top-left a {
+      margin-right: 30px;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+      .header-top .header-top-left a:hover {
+        color: #f95902; }
+  @media (max-width: 991px) {
+    .header-top {
+      display: none; } }
 
-/* line 11, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top a {
-  color: #fff;
-  font-weight: 500;
-  font-size: 12px;
-}
-
-/* line 15, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top a i {
-  color: #e9ebee;
-}
-
-/* line 19, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-right-list {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0 auto;
-}
-
-/* line 25, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-right-list > li:not(:last-child) a {
-  padding-right: 10px;
-  border-right: 1px solid #e9ebee;
-}
-
-/* line 31, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-right-list .nice-select {
-  background: transparent;
-  border: 0;
-  font-size: 12px;
-}
-
-/* line 35, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-right-list .nice-select:after {
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
-}
-
-/* line 40, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-right-list .nice-select:hover .current {
-  color: #f95902;
-}
-
-/* line 44, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-right-list .nice-select .current {
-  color: #fff;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 50, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-right {
-  text-align: right;
-}
-
-/* line 52, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-right i {
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 55, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-right a {
-  margin-left: 8px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 59, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-right a:hover {
-  color: #f95902;
-}
-
-/* line 61, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-right a:hover i {
-  color: #f95902;
-}
-
-/* line 66, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-left {
-  display: inline-block;
-}
-
-/* line 68, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-left a {
-  margin-right: 30px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 71, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.header-top .header-top-left a:hover {
-  color: #f95902;
-}
-
-@media (max-width: 991px) {
-  /* line 5, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-  .header-top {
-    display: none;
-  }
-}
-
-/* line 81, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .top-head-btn {
   background: #f95902;
-  padding: 9px 26px;
-}
+  padding: 9px 26px; }
 
 @media (max-width: 991px) {
-  /* line 88, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
   #mobile-nav-toggle i {
-    color: #f95902 !important;
-  }
-}
-
+    color: #f95902 !important; } }
 @media (max-width: 991px) {
-  /* line 94, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
   .main-menu {
     height: 100px;
-    line-height: 100px;
-  }
-}
-
+    line-height: 100px; } }
 @media (max-width: 768px) {
-  /* line 94, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
   .main-menu {
     height: 80px;
-    line-height: 80px;
-  }
-}
+    line-height: 80px; } }
 
-/* line 105, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #header {
   transition: all 0.5s;
   z-index: 997;
-  background: #fff;
-}
-
-/* line 109, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-#header hr {
-  margin: 0;
-  background: rgba(204, 204, 204, 0.54);
-}
-
-@media (max-width: 991px) {
-  /* line 109, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
+  background: #fff; }
   #header hr {
-    display: none;
-  }
-}
+    margin: 0;
+    background: rgba(204, 204, 204, 0.54); }
+    @media (max-width: 991px) {
+      #header hr {
+        display: none; } }
 
-/* line 118, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #header.header-scrolled {
   position: fixed;
   left: 0;
   top: 0;
   right: 0;
   transition: all 0.5s;
-  box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3);
-}
-
-/* line 125, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-#header.header-scrolled .header-top,
-#header.header-scrolled hr {
-  display: none;
-}
+  box-shadow: -21.213px 21.213px 30px 0px rgba(158, 158, 158, 0.3); }
+  #header.header-scrolled .header-top,
+  #header.header-scrolled hr {
+    display: none; }
 
 @media (max-width: 673px) {
-  /* line 132, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
   #logo {
-    margin-left: 20px;
-  }
-}
-
-/* line 137, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
+    margin-left: 20px; } }
 #header #logo h1 {
   font-size: 34px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  letter-spacing: 3px;
-}
+  letter-spacing: 3px; }
 
-/* line 146, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #header #logo h1 a,
 #header #logo h1 a:hover {
   color: #000;
   padding-left: 10px;
-  border-left: 4px solid #f95902;
-}
+  border-left: 4px solid #f95902; }
 
-/* line 153, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #header #logo img {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 @media (max-width: 768px) {
-  /* line 159, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
   #header #logo h1 {
-    font-size: 28px;
-  }
-  /* line 162, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-  #header #logo img {
-    max-height: 40px;
-  }
-}
+    font-size: 28px; }
 
+  #header #logo img {
+    max-height: 40px; } }
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
-/* line 173, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu,
 .nav-menu * {
   margin: 0;
   padding: 0;
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 180, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu ul {
   position: absolute;
   display: none;
   top: 100%;
   left: 0;
-  z-index: 99;
-}
+  z-index: 99; }
 
-/* line 188, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu li {
   position: relative;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
-/* line 193, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu > li {
-  float: left;
-}
+  float: left; }
 
-/* line 197, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu li:hover > ul,
 .nav-menu li.sfHover > ul {
-  display: block;
-}
+  display: block; }
 
-/* line 202, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu ul ul {
   top: 0;
-  right: 100%;
-}
+  right: 100%; }
 
-/* line 207, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu ul li {
-  min-width: 180px;
-}
+  min-width: 180px; }
 
 /* Nav Menu Arrows */
-/* line 212, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .sf-arrows .sf-with-ul {
-  padding-right: 30px;
-}
+  padding-right: 30px; }
+  .sf-arrows .sf-with-ul:after {
+    content: "\e64b";
+    position: absolute;
+    right: 18px;
+    font-family: 'themify';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px; }
 
-/* line 214, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-.sf-arrows .sf-with-ul:after {
-  content: "\e64b";
-  position: absolute;
-  right: 18px;
-  font-family: 'themify';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-}
-
-/* line 225, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .sf-arrows ul .sf-with-ul:after {
-  content: "\f105";
-}
+  content: "\f105"; }
 
 /* Nav Meu Container */
 @media (max-width: 768px) {
-  /* line 232, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
   #nav-menu-container {
-    display: none;
-  }
-}
-
+    display: none; } }
 /* Nav Meu Styling */
-/* line 240, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu a {
   margin: 36px 8px;
   text-decoration: none;
@@ -943,49 +622,32 @@ h6 {
   text-transform: uppercase;
   outline: none;
   font-size: 14px;
-  letter-spacing: 0.1px;
-}
-
-@media (max-width: 1199px) and (min-width: 992px) {
-  /* line 240, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-  .nav-menu a {
-    font-size: 13px;
-    margin: 36px 2px;
-  }
-}
-
-/* line 255, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
+  letter-spacing: 0.1px; }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .nav-menu a {
+      font-size: 13px;
+      margin: 36px 2px; } }
 .nav-menu .primary-btn {
   padding: 0px 35px;
   margin: 24px 0;
   text-transform: capitalize;
-  line-height: 44px;
-}
+  line-height: 44px; }
 
-/* line 263, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu li:hover > a,
 .nav-menu > .menu-active > a {
-  color: #f95902;
-}
+  color: #f95902; }
 
-/* line 268, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu > li {
-  margin-left: 18px;
-}
+  margin-left: 18px; }
 
-/* line 272, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu ul {
   padding: 10px;
   box-shadow: 0px 6px 16px rgba(127, 137, 161, 0.25);
-  background: #fff;
-}
+  background: #fff; }
 
-/* line 278, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu ul li {
-  transition: 0.3s;
-}
+  transition: 0.3s; }
 
-/* line 282, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu ul li a {
   margin: 0;
   padding: 5px 10px;
@@ -993,22 +655,16 @@ h6 {
   transition: 0.3s;
   display: block;
   font-size: 14px;
-  text-transform: none;
-}
+  text-transform: none; }
 
-/* line 292, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu ul li:hover > a {
-  color: #f95902;
-}
+  color: #f95902; }
 
-/* line 296, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 .nav-menu ul ul {
   margin-right: 10px;
-  margin-top: 0;
-}
+  margin-top: 0; }
 
 /* Mobile Nav Toggle */
-/* line 303, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav-toggle {
   position: fixed;
   right: 15px;
@@ -1020,42 +676,25 @@ h6 {
   display: none;
   transition: all 0.4s;
   outline: none;
-  cursor: pointer;
-}
+  cursor: pointer; }
+  @media (max-width: 991px) {
+    #mobile-nav-toggle {
+      top: 36px; } }
+  @media (max-width: 991px) {
+    #mobile-nav-toggle {
+      top: 28px; } }
 
-@media (max-width: 991px) {
-  /* line 303, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-  #mobile-nav-toggle {
-    top: 36px;
-  }
-}
-
-@media (max-width: 991px) {
-  /* line 303, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-  #mobile-nav-toggle {
-    top: 28px;
-  }
-}
-
-/* line 323, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav-toggle i {
   color: #fff;
-  font-weight: 900;
-}
+  font-weight: 900; }
 
 @media (max-width: 960px) {
-  /* line 329, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
   #mobile-nav-toggle {
-    display: inline;
-  }
-  /* line 332, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
-  #nav-menu-container {
-    display: none;
-  }
-}
+    display: inline; }
 
+  #nav-menu-container {
+    display: none; } }
 /* Mobile Nav Styling */
-/* line 339, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav {
   position: fixed;
   top: 0;
@@ -1066,22 +705,16 @@ h6 {
   left: -260px;
   width: 260px;
   overflow-y: auto;
-  transition: 0.4s;
-}
+  transition: 0.4s; }
 
-/* line 352, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav ul {
   padding: 0;
   margin: 0;
-  list-style: none;
-}
+  list-style: none; }
 
-/* line 358, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav ul li {
-  position: relative;
-}
+  position: relative; }
 
-/* line 362, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav ul li a {
   color: #fff;
   font-size: 13px;
@@ -1093,45 +726,31 @@ h6 {
   width: 100%;
   display: block;
   outline: none;
-  font-weight: 700;
-}
+  font-weight: 700; }
 
-/* line 376, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav ul li a:hover {
-  color: #fff;
-}
+  color: #fff; }
 
-/* line 380, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav ul li li {
-  padding-left: 30px;
-}
+  padding-left: 30px; }
 
-/* line 384, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav ul .menu-has-children i {
   position: absolute;
   right: 0;
   z-index: 99;
   padding: 15px;
   cursor: pointer;
-  color: #fff;
-}
+  color: #fff; }
 
-/* line 393, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #f95902;
-}
+  color: #f95902; }
 
-/* line 397, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav ul .menu-has-children li a {
-  text-transform: none;
-}
+  text-transform: none; }
 
-/* line 401, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-nav ul .menu-item-active {
-  color: #f95902;
-}
+  color: #f95902; }
 
-/* line 405, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 #mobile-body-overly {
   width: 100%;
   height: 100%;
@@ -1140,227 +759,135 @@ h6 {
   left: 0;
   position: fixed;
   background: rgba(0, 0, 0, 0.7);
-  display: none;
-}
+  display: none; }
 
 /* Mobile Nav body classes */
-/* line 418, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 body.mobile-nav-active {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
-/* line 422, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 body.mobile-nav-active #mobile-nav {
-  left: 0;
-}
+  left: 0; }
 
-/* line 426, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_header.scss */
 body.mobile-nav-active #mobile-nav-toggle {
-  color: #fff;
-}
+  color: #fff; }
 
 /*--------------------------------------------------------------
 # Start Banner Area
 --------------------------------------------------------------*/
-/* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
 .home-banner-area {
-  position: relative;
-}
-
-/* line 7, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.home-banner-area.owl-carousel .owl-item .owl-lazy {
-  background-size: cover;
-  position: relative;
-}
-
-/* line 11, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.home-banner-area.owl-carousel .owl-item .owl-lazy:before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(2, 4, 29, 0.6);
-}
-
-/* line 22, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.home-banner-area .owl-dots {
-  position: absolute;
-  top: 50%;
-  right: 68px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-@media (max-width: 991px) {
-  /* line 22, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
+  position: relative; }
+  .home-banner-area.owl-carousel .owl-item .owl-lazy {
+    background-size: cover;
+    position: relative; }
+    .home-banner-area.owl-carousel .owl-item .owl-lazy:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba(2, 4, 29, 0.6); }
   .home-banner-area .owl-dots {
-    display: none !important;
-  }
-}
-
-/* line 30, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.home-banner-area .owl-dots .owl-dot {
-  height: 10px;
-  width: 10px;
-  background: #dfdfdf;
-  border-radius: 10px;
-  margin-bottom: 22px;
-}
-
-/* line 36, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.home-banner-area .owl-dots .owl-dot.active {
-  background: #f95902;
-}
-
-/* line 39, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.home-banner-area .owl-dots .owl-dot:last-child {
-  margin-bottom: 0;
-}
-
-/* line 45, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.home-banner-area .fullscreen {
-  height: 800px;
-}
-
-@media (max-width: 767.98px) {
-  /* line 45, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
+    position: absolute;
+    top: 50%;
+    right: 68px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    @media (max-width: 991px) {
+      .home-banner-area .owl-dots {
+        display: none !important; } }
+    .home-banner-area .owl-dots .owl-dot {
+      height: 10px;
+      width: 10px;
+      background: #dfdfdf;
+      border-radius: 10px;
+      margin-bottom: 22px; }
+      .home-banner-area .owl-dots .owl-dot.active {
+        background: #f95902; }
+      .home-banner-area .owl-dots .owl-dot:last-child {
+        margin-bottom: 0; }
   .home-banner-area .fullscreen {
-    height: 600px;
-  }
-}
+    height: 800px; }
+    @media (max-width: 767.98px) {
+      .home-banner-area .fullscreen {
+        height: 600px; } }
+  .home-banner-area.home-banner-area2 {
+    background: url(../img/home-banner-bg4.jpg) no-repeat center;
+    background-size: cover;
+    position: relative; }
+    .home-banner-area.home-banner-area2:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba(2, 4, 29, 0.8); }
+  .home-banner-area.home-banner-area3 {
+    background: url(../img/home-banner-bg5.jpg) no-repeat center;
+    background-size: cover;
+    position: relative; }
+    .home-banner-area.home-banner-area3:before {
+      content: '';
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: rgba(2, 4, 29, 0.8); }
 
-/* line 52, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.home-banner-area.home-banner-area2 {
-  background: url(../img/home-banner-bg4.jpg) no-repeat center;
-  background-size: cover;
-  position: relative;
-}
-
-/* line 57, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.home-banner-area.home-banner-area2:before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(2, 4, 29, 0.8);
-}
-
-/* line 67, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.home-banner-area.home-banner-area3 {
-  background: url(../img/home-banner-bg5.jpg) no-repeat center;
-  background-size: cover;
-  position: relative;
-}
-
-/* line 72, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.home-banner-area.home-banner-area3:before {
-  content: '';
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background: rgba(2, 4, 29, 0.8);
-}
-
-/* line 85, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
 .banner-content h4 {
   font-size: 18px;
   font-weight: 500;
   color: #f95902;
-  margin-bottom: 30px;
-}
-
-/* line 92, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
+  margin-bottom: 30px; }
 .banner-content h2 {
   color: #fff;
   font-size: 50px;
   line-height: 60px;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 767px) {
-  /* line 92, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-  .banner-content h2 {
-    font-size: 30px;
-    line-height: 40px;
-  }
-}
-
-/* line 104, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
+  margin-bottom: 40px; }
+  @media (max-width: 767px) {
+    .banner-content h2 {
+      font-size: 30px;
+      line-height: 40px; } }
 .banner-content p {
-  max-width: 900px;
-}
-
-/* line 108, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
+  max-width: 900px; }
 .banner-content .primary-btn {
-  line-height: 44px;
-}
+  line-height: 44px; }
 
-/* line 113, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
 .banner-area {
   background: url(../img/banner-bg.jpg) no-repeat center;
   background-size: cover;
   min-height: 400px;
-  position: relative;
-}
-
-@media (max-width: 767px) {
-  /* line 113, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-  .banner-area {
-    min-height: 375px;
-  }
-}
-
-/* line 123, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.banner-area:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background: rgba(43, 47, 106, 0.6);
-}
-
-/* line 133, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.banner-area .banner-content {
-  padding: 170px 0px;
-}
-
-@media (max-width: 767px) {
-  /* line 133, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
+  position: relative; }
+  @media (max-width: 767px) {
+    .banner-area {
+      min-height: 375px; } }
+  .banner-area:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(43, 47, 106, 0.6); }
   .banner-area .banner-content {
-    margin: 0px 30px;
-  }
-}
-
-/* line 140, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-.banner-area .banner-content h1 {
-  font-size: 50px;
-  font-weight: 700;
-}
-
-@media (max-width: 768px) {
-  /* line 140, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-  .banner-area .banner-content h1 {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 414px) {
-  /* line 140, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_banner.scss */
-  .banner-area .banner-content h1 {
-    font-size: 30px;
-  }
-}
+    padding: 170px 0px; }
+    @media (max-width: 767px) {
+      .banner-area .banner-content {
+        margin: 0px 30px; } }
+    .banner-area .banner-content h1 {
+      font-size: 50px;
+      font-weight: 700; }
+      @media (max-width: 768px) {
+        .banner-area .banner-content h1 {
+          font-size: 35px; } }
+      @media (max-width: 414px) {
+        .banner-area .banner-content h1 {
+          font-size: 30px; } }
 
 /*--------------------------------------------------------------
 # End Banner Area
@@ -1368,89 +895,52 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start About Area
 --------------------------------------------------------------*/
-/* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
 .about-area {
   background: #fff;
   padding: 80px 50px;
   position: relative;
   z-index: 99;
   margin-top: -80px;
-  box-shadow: 0px 20px 30px 0 rgba(20, 48, 58, 0.16);
-}
-
-@media (max-width: 991px) {
-  /* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
-  .about-area {
-    margin-top: 0;
-    padding: 80px 0;
-    box-shadow: none;
-  }
-}
-
-/* line 16, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
-.about-area.about-area2 {
-  box-shadow: none;
-  padding-bottom: 0px;
-}
-
-@media (max-width: 991px) {
-  /* line 16, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
+  box-shadow: 0px 5px 20px 0 rgba(20, 48, 58, 0.1); }
+  @media (max-width: 991px) {
+    .about-area {
+      margin-top: 0;
+      padding: 80px 0;
+      box-shadow: none; } }
   .about-area.about-area2 {
-    padding-top: 0px;
-  }
-}
+    box-shadow: none;
+    padding-bottom: 0px; }
+    @media (max-width: 991px) {
+      .about-area.about-area2 {
+        padding-top: 0px; } }
+  .about-area .main-title {
+    padding: 0px 30px; }
+    .about-area .main-title h2 {
+      color: #14303a; }
+    .about-area .main-title p {
+      font-size: 14px;
+      margin-bottom: 40px; }
+  .about-area .about-img-box {
+    position: relative;
+    padding-bottom: 25px; }
+    .about-area .about-img-box .about-img {
+      position: relative;
+      z-index: 9; }
+    .about-area .about-img-box:after {
+      content: '';
+      background: url(../img/about-img-bg.png) no-repeat;
+      position: absolute;
+      left: 19px;
+      top: 25px;
+      right: -25px;
+      bottom: 0px; }
 
-/* line 23, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
-.about-area .main-title {
-  padding: 0px 30px;
-}
-
-/* line 25, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
-.about-area .main-title h2 {
-  color: #14303a;
-}
-
-/* line 28, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
-.about-area .main-title p {
-  font-size: 14px;
-  margin-bottom: 40px;
-}
-
-/* line 33, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
-.about-area .about-img-box {
-  position: relative;
-  padding-bottom: 25px;
-}
-
-/* line 36, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
-.about-area .about-img-box .about-img {
-  position: relative;
-  z-index: 9;
-}
-
-/* line 40, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
-.about-area .about-img-box:after {
-  content: '';
-  background: url(../img/about-img-bg.png) no-repeat;
-  position: absolute;
-  left: 19px;
-  top: 25px;
-  right: -25px;
-  bottom: 0px;
-}
-
-/* line 53, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
 .about-page .about-area {
   margin-top: 0px;
-  padding-top: 130px;
-}
-
-@media (max-width: 991px) {
-  /* line 53, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_about.scss */
-  .about-page .about-area {
-    padding-top: 80px;
-  }
-}
+  padding-top: 130px; }
+  @media (max-width: 991px) {
+    .about-page .about-area {
+      padding-top: 80px; } }
 
 /*--------------------------------------------------------------
 # End About Area
@@ -1458,20 +948,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Service Area
 --------------------------------------------------------------*/
-/* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
 .service-area {
   background: #f6f6f6;
-  padding-bottom: 90px;
-}
+  padding-bottom: 90px; }
+  @media (max-width: 991px) {
+    .service-area {
+      padding-bottom: 50px; } }
 
-@media (max-width: 991px) {
-  /* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
-  .service-area {
-    padding-bottom: 50px;
-  }
-}
-
-/* line 12, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
 .single-service {
   padding: 36px 27px;
   text-align: center;
@@ -1481,70 +964,39 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-@media (max-width: 1199px) and (min-width: 992px) {
-  /* line 12, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
-  .single-service {
-    padding: 36px 15px;
-  }
-}
-
-@media (max-width: 768px) {
-  /* line 12, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
-  .single-service {
-    padding: 30px 18px;
-  }
-}
-
-/* line 25, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
-.single-service .top-icon {
-  display: inline-block;
-  background: rgba(249, 89, 2, 0.15);
-  border-radius: 50px;
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  line-height: 80px;
-}
-
-/* line 34, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
-.single-service h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #14303a;
-  margin-top: 25px;
-  margin-bottom: 18px;
-}
-
-@media (max-width: 1199px) and (min-width: 992px) {
-  /* line 34, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
+  transition: all 0.3s ease 0s; }
+  @media (max-width: 1199px) and (min-width: 992px) {
+    .single-service {
+      padding: 36px 15px; } }
+  @media (max-width: 768px) {
+    .single-service {
+      padding: 30px 18px; } }
+  .single-service .top-icon {
+    display: inline-block;
+    background: rgba(249, 89, 2, 0.15);
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px; }
   .single-service h4 {
-    font-size: 18px;
-  }
-}
-
-/* line 44, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
-.single-service p {
-  margin-bottom: 21px;
-}
-
-/* line 47, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
-.single-service:hover {
-  box-shadow: 0px 20px 40px 0 rgba(20, 48, 58, 0.16);
-}
-
-/* line 49, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
-.single-service:hover .primary-btn2 {
-  color: #f95902;
-}
-
-/* line 51, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_services.scss */
-.single-service:hover .primary-btn2 i {
-  color: #f95902;
-  left: 15px;
-}
+    font-size: 20px;
+    font-weight: 700;
+    color: #14303a;
+    margin-top: 25px;
+    margin-bottom: 18px; }
+    @media (max-width: 1199px) and (min-width: 992px) {
+      .single-service h4 {
+        font-size: 18px; } }
+  .single-service p {
+    margin-bottom: 21px; }
+  .single-service:hover {
+    box-shadow: 0px 20px 40px 0 rgba(20, 48, 58, 0.16); }
+    .single-service:hover .primary-btn2 {
+      color: #f95902; }
+      .single-service:hover .primary-btn2 i {
+        color: #f95902;
+        left: 15px; }
 
 /*--------------------------------------------------------------
 # End Service Area
@@ -1552,19 +1004,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Feature Area
 --------------------------------------------------------------*/
-/* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
 .feature-area {
-  padding-bottom: 100px;
-}
+  padding-bottom: 100px; }
+  @media (max-width: 991px) {
+    .feature-area {
+      padding-bottom: 50px; } }
 
-@media (max-width: 991px) {
-  /* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-  .feature-area {
-    padding-bottom: 50px;
-  }
-}
-
-/* line 11, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
 .single-feature {
   padding: 55px 35px;
   text-align: center;
@@ -1574,66 +1019,40 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-@media (max-width: 768px) {
-  /* line 11, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-  .single-feature {
-    padding: 30px 18px;
-  }
-}
-
-/* line 21, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-.single-feature:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  z-index: -1;
-}
-
-/* line 32, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-.single-feature .top-icon {
-  font-size: 60px;
-}
-
-/* line 35, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-.single-feature h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #14303a;
-  margin-top: 32px;
-  margin-bottom: 25px;
-}
-
-/* line 42, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-.single-feature p {
-  margin-bottom: 0px;
-}
-
-/* line 45, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-.single-feature .primary-btn {
-  line-height: 44px;
-}
-
-/* line 48, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-.single-feature:hover {
-  border-top: 1px solid #f95902;
-  border-right: 1px solid transparent;
-  border-bottom: 1px solid #f95902;
-  border-left: 1px solid transparent;
-}
-
-/* line 53, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-.single-feature:hover:before {
-  border-top: 1px solid #f95902;
-  border-bottom: 1px solid #f95902;
-}
+  transition: all 0.3s ease 0s; }
+  @media (max-width: 768px) {
+    .single-feature {
+      padding: 30px 18px; } }
+  .single-feature:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    z-index: -1; }
+  .single-feature .top-icon {
+    font-size: 60px; }
+  .single-feature h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #14303a;
+    margin-top: 32px;
+    margin-bottom: 25px; }
+  .single-feature p {
+    margin-bottom: 0px; }
+  .single-feature .primary-btn {
+    line-height: 44px; }
+  .single-feature:hover {
+    border-top: 1px solid #f95902;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid #f95902;
+    border-left: 1px solid transparent; }
+    .single-feature:hover:before {
+      border-top: 1px solid #f95902;
+      border-bottom: 1px solid #f95902; }
 
 /*--------------------------------------------------------------
 # End Feature Area
@@ -1641,83 +1060,43 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Advance Feature Area
 --------------------------------------------------------------*/
-/* line 68, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
 .advance-feature-area {
-  position: relative;
-}
-
-@media (max-width: 1630px) {
-  /* line 68, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-  .advance-feature-area {
-    padding-top: 120px;
-  }
-}
-
-@media (max-width: 991px) {
-  /* line 68, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-  .advance-feature-area {
-    padding-top: 80px;
-  }
-}
-
-/* line 76, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-.advance-feature-area .container-fluid {
-  padding-left: 21%;
-}
-
-@media (max-width: 1480px) {
-  /* line 76, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
+  position: relative; }
+  @media (max-width: 1630px) {
+    .advance-feature-area {
+      padding-top: 120px; } }
+  @media (max-width: 991px) {
+    .advance-feature-area {
+      padding-top: 80px; } }
   .advance-feature-area .container-fluid {
-    padding-left: 15px;
-    max-width: 1140px;
-  }
-}
-
-@media (max-width: 1199px) {
-  /* line 76, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-  .advance-feature-area .container-fluid {
-    max-width: 960px;
-  }
-}
-
-@media (max-width: 991px) {
-  /* line 76, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-  .advance-feature-area .container-fluid {
-    max-width: 720px;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 76, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-  .advance-feature-area .container-fluid {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 1921px) {
-  /* line 76, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-  .advance-feature-area .container-fluid {
-    padding-left: 29%;
-  }
-}
-
-/* line 96, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
-.advance-feature-area .banner-img {
-  text-align: right;
-  position: relative;
-  padding-right: 0px;
-  -ms-flex-item-align: end;
-  align-self: flex-end;
-}
-
-@media (max-width: 1024px) {
-  /* line 96, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_features.scss */
+    padding-left: 21%; }
+    @media (max-width: 1480px) {
+      .advance-feature-area .container-fluid {
+        padding-left: 15px;
+        max-width: 1140px; } }
+    @media (max-width: 1199px) {
+      .advance-feature-area .container-fluid {
+        max-width: 960px; } }
+    @media (max-width: 991px) {
+      .advance-feature-area .container-fluid {
+        max-width: 720px; } }
+    @media (max-width: 767px) {
+      .advance-feature-area .container-fluid {
+        max-width: 540px; } }
+    @media (min-width: 1921px) {
+      .advance-feature-area .container-fluid {
+        padding-left: 29%; } }
   .advance-feature-area .banner-img {
-    -ms-flex-item-align: center;
-    align-self: center;
-    text-align: left;
-  }
-}
+    text-align: right;
+    position: relative;
+    padding-right: 0px;
+    -ms-flex-item-align: end;
+    align-self: flex-end; }
+    @media (max-width: 1024px) {
+      .advance-feature-area .banner-img {
+        -ms-flex-item-align: center;
+        align-self: center;
+        text-align: left; } }
 
 /*--------------------------------------------------------------
 # End Advance Feature Area
@@ -1725,12 +1104,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Project Area
 --------------------------------------------------------------*/
-/* line 6, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
 .project-area .primary-btn {
-  line-height: 44px;
-}
-
-/* line 11, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
+  line-height: 44px; }
 .project-area .top-part .main-title {
   padding: 90px 69px 90px 70px;
   background: #fff;
@@ -1738,114 +1113,63 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-right: -100px;
   margin-bottom: -50px;
   z-index: 9;
-  box-shadow: 0px 20px 30px 0 rgba(20, 48, 58, 0.16);
+  box-shadow: 0px 5px 20px 0 rgba(20, 48, 58, 0.1);
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-@media (max-width: 991px) {
-  /* line 11, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-  .project-area .top-part .main-title {
-    margin-right: 0px;
-    padding: 20px 0 40px;
-    box-shadow: none;
-  }
-}
-
-/* line 27, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-area .top-part .main-title h2 {
-  font-size: 42px;
-}
-
-@media (max-width: 991px) {
-  /* line 27, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
+  transition: all 0.3s ease 0s; }
+  @media (max-width: 991px) {
+    .project-area .top-part .main-title {
+      margin-right: 0px;
+      padding: 20px 0 40px;
+      box-shadow: none; } }
   .project-area .top-part .main-title h2 {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 27, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-  .project-area .top-part .main-title h2 {
-    font-size: 25px;
-  }
-}
-
-/* line 39, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-area .top-part .main-title .primary-btn {
-  margin-top: 35px;
-}
-
-/* line 45, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
+    font-size: 42px; }
+    @media (max-width: 991px) {
+      .project-area .top-part .main-title h2 {
+        font-size: 35px; } }
+    @media (max-width: 767px) {
+      .project-area .top-part .main-title h2 {
+        font-size: 25px; } }
+  .project-area .top-part .main-title .primary-btn {
+    margin-top: 35px; }
 .project-area .bottom-part {
-  padding: 180px 0;
-}
-
-@media (max-width: 991px) {
-  /* line 45, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-  .project-area .bottom-part {
-    padding: 130px 0;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 45, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-  .project-area .bottom-part {
-    padding: 90px 0;
-  }
-}
-
-/* line 53, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-area .bottom-part .main-title {
-  padding: 90px 60px 90px 70px;
-  background: #fff;
-  position: relative;
-  margin-left: -100px;
-  margin-bottom: -50px;
-  z-index: 9;
-  box-shadow: 0px 20px 30px 0 rgba(20, 48, 58, 0.16);
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-@media (max-width: 991px) {
-  /* line 53, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
+  padding: 180px 0; }
+  @media (max-width: 991px) {
+    .project-area .bottom-part {
+      padding: 130px 0; } }
+  @media (max-width: 767px) {
+    .project-area .bottom-part {
+      padding: 90px 0; } }
   .project-area .bottom-part .main-title {
-    margin-left: 0px;
-    padding: 40px 0 0;
-    box-shadow: none;
-    margin-bottom: 0;
-    box-shadow: none;
-  }
-}
-
-/* line 71, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-area .bottom-part .main-title h2 {
-  font-size: 42px;
-}
-
-@media (max-width: 991px) {
-  /* line 71, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-  .project-area .bottom-part .main-title h2 {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 71, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-  .project-area .bottom-part .main-title h2 {
-    font-size: 25px;
-  }
-}
-
-/* line 83, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-area .bottom-part .main-title .primary-btn {
-  margin-top: 35px;
-}
+    padding: 90px 60px 90px 70px;
+    background: #fff;
+    position: relative;
+    margin-left: -100px;
+    margin-bottom: -50px;
+    z-index: 9;
+    box-shadow: 0px 5px 20px 0 rgba(20, 48, 58, 0.1);
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+    @media (max-width: 991px) {
+      .project-area .bottom-part .main-title {
+        margin-left: 0px;
+        padding: 40px 0 0;
+        box-shadow: none;
+        margin-bottom: 0;
+        box-shadow: none; } }
+    .project-area .bottom-part .main-title h2 {
+      font-size: 42px; }
+      @media (max-width: 991px) {
+        .project-area .bottom-part .main-title h2 {
+          font-size: 35px; } }
+      @media (max-width: 767px) {
+        .project-area .bottom-part .main-title h2 {
+          font-size: 25px; } }
+    .project-area .bottom-part .main-title .primary-btn {
+      margin-top: 35px; }
 
 /*--------------------------------------------------------------
 # End Project Area
@@ -1853,112 +1177,65 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Project Details Area
 --------------------------------------------------------------*/
-/* line 99, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
 .project-details-area .project-heading {
   font-size: 30px;
   font-weight: 700;
   color: #14303a;
-  margin-bottom: 22px;
-}
+  margin-bottom: 22px; }
 
-/* line 110, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
 .project-info .project-right-text .list-box {
   border: 1px solid #e9ebee;
-  padding: 40px;
-}
-
-/* line 116, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
+  padding: 40px; }
 .project-info .project-right-text .list li {
   border-bottom: 1px solid #e9ebee;
   margin-bottom: 16px;
-  padding-bottom: 16px;
-}
+  padding-bottom: 16px; }
+  .project-info .project-right-text .list li span {
+    display: inline-block; }
+  .project-info .project-right-text .list li .left-side {
+    font-size: 16px;
+    font-weight: 500;
+    color: #14303a; }
+  .project-info .project-right-text .list li .right-side {
+    font-weight: 400; }
 
-/* line 121, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-info .project-right-text .list li span {
-  display: inline-block;
-}
-
-/* line 125, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-info .project-right-text .list li .left-side {
-  font-size: 16px;
-  font-weight: 500;
-  color: #14303a;
-}
-
-/* line 131, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-info .project-right-text .list li .right-side {
-  font-weight: 400;
-}
-
-/* line 139, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
 .project-description {
-  margin-top: 80px;
-}
-
-/* line 143, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-description p:last-of-type {
-  margin-bottom: 80px;
-}
-
-@media (max-width: 991px) {
-  /* line 143, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
+  margin-top: 80px; }
   .project-description p:last-of-type {
-    margin-bottom: 40px;
-  }
-}
+    margin-bottom: 80px; }
+    @media (max-width: 991px) {
+      .project-description p:last-of-type {
+        margin-bottom: 40px; } }
 
-/* line 152, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
 .project-work {
-  margin-top: 80px;
-}
-
-/* line 156, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-work p:last-of-type {
-  margin-bottom: 80px;
-}
-
-@media (max-width: 991px) {
-  /* line 156, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
+  margin-top: 80px; }
   .project-work p:last-of-type {
-    margin-bottom: 0;
-  }
-}
-
-@media (max-width: 991px) {
-  /* line 164, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-  .project-work .owl-controls {
-    display: none;
-  }
-}
-
-/* line 168, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-work .owl-controls .owl-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
-/* line 171, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-work .owl-controls .owl-nav i {
-  display: inline-block;
-  font-size: 13.5px;
-  padding: 15px;
-  background: #14303a;
-  color: #fff;
-  border-radius: 2px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 179, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_projects.scss */
-.project-work .owl-controls .owl-nav i:hover {
-  background: -webkit-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-  background: -moz-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-  background: -o-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-  background: -linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-}
+    margin-bottom: 80px; }
+    @media (max-width: 991px) {
+      .project-work p:last-of-type {
+        margin-bottom: 0; } }
+  @media (max-width: 991px) {
+    .project-work .owl-controls {
+      display: none; } }
+  .project-work .owl-controls .owl-nav {
+    display: flex;
+    justify-content: space-between; }
+    .project-work .owl-controls .owl-nav i {
+      display: inline-block;
+      font-size: 13.5px;
+      padding: 15px;
+      background: #14303a;
+      color: #fff;
+      border-radius: 2px;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+      .project-work .owl-controls .owl-nav i:hover {
+        background: -webkit-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
+        background: -moz-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
+        background: -o-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
+        background: -linear-gradient(0deg, #f95902 0%, #ffbd4a 100%); }
 
 /*--------------------------------------------------------------
 # End Project Details Area
@@ -1966,74 +1243,46 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Testimonial Area
 --------------------------------------------------------------*/
-/* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
 .testimonial-area {
   background: url(../img/testimonial/testimonial-bg.jpg) no-repeat scroll center center;
   background-size: cover;
-  position: relative;
-}
-
-/* line 9, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.testimonial-area:before {
-  content: "";
-  background: rgba(3, 1, 18, 0.8);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  width: 100%;
-  height: 100%;
-}
-
-/* line 22, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.testimonial-area .main-title p {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-/* line 29, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.testimonial-area .owl-carousel .owl-item img {
-  min-width: 150px;
-}
-
-/* line 33, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.testimonial-area .owl-carousel .owl-dots {
-  display: flex;
-  justify-content: center;
-  margin-top: 75px;
-}
-
-@media (max-width: 991px) {
-  /* line 33, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
+  position: relative; }
+  .testimonial-area:before {
+    content: "";
+    background: rgba(3, 1, 18, 0.8);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%; }
+  .testimonial-area .main-title p {
+    color: rgba(255, 255, 255, 0.7); }
+  .testimonial-area .owl-carousel .owl-item img {
+    min-width: 150px; }
   .testimonial-area .owl-carousel .owl-dots {
-    display: none !important;
-  }
-}
+    display: flex;
+    justify-content: center;
+    margin-top: 75px; }
+    @media (max-width: 991px) {
+      .testimonial-area .owl-carousel .owl-dots {
+        display: none !important; } }
+    .testimonial-area .owl-carousel .owl-dots .owl-dot {
+      margin: 0px 10px; }
+      .testimonial-area .owl-carousel .owl-dots .owl-dot.active span {
+        background: #f95902; }
+      .testimonial-area .owl-carousel .owl-dots .owl-dot span {
+        display: inline-block;
+        height: 10px;
+        width: 10px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.7);
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s; }
 
-/* line 40, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.testimonial-area .owl-carousel .owl-dots .owl-dot {
-  margin: 0px 10px;
-}
-
-/* line 43, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.testimonial-area .owl-carousel .owl-dots .owl-dot.active span {
-  background: #f95902;
-}
-
-/* line 47, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.testimonial-area .owl-carousel .owl-dots .owl-dot span {
-  display: inline-block;
-  height: 10px;
-  width: 10px;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.7);
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 60, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
 .single-testimonial {
   background: #fff;
   border-radius: 5px;
@@ -2042,113 +1291,68 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-@media (max-width: 480px) {
-  /* line 60, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-  .single-testimonial {
-    padding: 30px 20px;
-  }
-}
-
-/* line 69, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.single-testimonial:after {
-  content: '';
-  position: absolute;
-  top: 56%;
-  right: 48px;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 80px;
-  height: 93px;
-  background: url(../img/testimonial/quote.png) no-repeat;
-}
-
-@media (max-width: 1199px) and (min-width: 768px) {
-  /* line 69, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
+  transition: all 0.3s ease 0s; }
+  @media (max-width: 480px) {
+    .single-testimonial {
+      padding: 30px 20px; } }
   .single-testimonial:after {
-    right: 80px;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 69, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-  .single-testimonial:after {
-    display: none;
-  }
-}
-
-/* line 86, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.single-testimonial:hover {
-  cursor: pointer;
-}
-
-/* line 90, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.single-testimonial .thumb {
-  margin-right: 28px;
-  position: relative;
-}
-
-@media (max-width: 767px) {
-  /* line 90, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
+    content: '';
+    position: absolute;
+    top: 56%;
+    right: 48px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 80px;
+    height: 93px;
+    background: url(../img/testimonial/quote.png) no-repeat; }
+    @media (max-width: 1199px) and (min-width: 768px) {
+      .single-testimonial:after {
+        right: 80px; } }
+    @media (max-width: 767px) {
+      .single-testimonial:after {
+        display: none; } }
+  .single-testimonial:hover {
+    cursor: pointer; }
   .single-testimonial .thumb {
-    display: none;
-  }
-}
-
-/* line 96, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.single-testimonial .thumb:before {
-  content: '';
-  position: absolute;
-  left: 0px;
-  top: -50px;
-  width: 150px;
-  height: 2px;
-  background: #f95902;
-}
-
-/* line 107, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.single-testimonial h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #14303a;
-  margin-bottom: 20px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 114, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.single-testimonial h4 .designation {
-  color: #777777;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-/* line 120, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.single-testimonial p {
-  margin-bottom: 0;
-  position: relative;
-  z-index: 99;
-}
-
-/* line 127, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-.single-testimonial:hover h4 {
-  color: #f95902;
-  cursor: pointer;
-}
-
-@media (max-width: 575px) {
-  /* line 60, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_testimonial.scss */
-  .single-testimonial {
-    margin: 15px;
-  }
-}
+    margin-right: 28px;
+    position: relative; }
+    @media (max-width: 767px) {
+      .single-testimonial .thumb {
+        display: none; } }
+    .single-testimonial .thumb:before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: -50px;
+      width: 150px;
+      height: 2px;
+      background: #f95902; }
+  .single-testimonial h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #14303a;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+    .single-testimonial h4 .designation {
+      color: #777777;
+      font-size: 14px;
+      font-weight: 400; }
+  .single-testimonial p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 99; }
+  .single-testimonial:hover h4 {
+    color: #f95902;
+    cursor: pointer; }
+  @media (max-width: 575px) {
+    .single-testimonial {
+      margin: 15px; } }
 
 /*--------------------------------------------------------------
 # End Testimonial Area
@@ -2156,163 +1360,93 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Team Area
 --------------------------------------------------------------*/
-/* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
 .team-area {
-  padding-bottom: 70px;
-}
+  padding-bottom: 70px; }
+  @media (max-width: 991px) {
+    .team-area {
+      padding-bottom: 20px; } }
 
-@media (max-width: 991px) {
-  /* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-  .team-area {
-    padding-bottom: 20px;
-  }
-}
-
-/* line 12, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
 .single-team {
-  margin-bottom: 163px;
-}
-
-@media (max-width: 991px) {
-  /* line 12, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-  .single-team {
-    margin-bottom: 10px;
-  }
-}
-
-/* line 17, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-.single-team .thumb {
-  position: relative;
-}
-
-/* line 21, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-.single-team .meta-text {
-  padding: 42px 15px 40px;
-  position: absolute;
-  bottom: -24%;
-  left: 40px;
-  right: 40px;
-  background: #fff;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-@media (max-width: 991px) {
-  /* line 21, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
+  margin-bottom: 163px; }
+  @media (max-width: 991px) {
+    .single-team {
+      margin-bottom: 10px; } }
+  .single-team .thumb {
+    position: relative; }
   .single-team .meta-text {
-    padding: 30px 15px;
-    position: relative;
-    left: 0;
-    bottom: 0px;
-    right: 0;
-  }
-}
-
-/* line 39, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-.single-team .meta-text h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 5px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 46, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-.single-team .meta-text .designation {
-  font-size: 14px;
-  margin-bottom: 0px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-@media (max-width: 991px) {
-  /* line 46, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-  .single-team .meta-text .designation {
-    margin-bottom: 18px;
-  }
-}
-
-/* line 55, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-.single-team .meta-text a {
-  margin: 0 15px;
-  font-size: 14px;
-  font-weight: 400;
-  color: #fff;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-@media (max-width: 991px) {
-  /* line 55, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-  .single-team .meta-text a {
-    color: #777777;
-  }
-}
-
-/* line 68, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-.single-team .social {
-  display: none;
-}
-
-@media (max-width: 991px) {
-  /* line 68, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
+    padding: 42px 15px 40px;
+    position: absolute;
+    bottom: -24%;
+    left: 40px;
+    right: 40px;
+    background: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+    @media (max-width: 991px) {
+      .single-team .meta-text {
+        padding: 30px 15px;
+        position: relative;
+        left: 0;
+        bottom: 0px;
+        right: 0; } }
+    .single-team .meta-text h4 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 5px;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    .single-team .meta-text .designation {
+      font-size: 14px;
+      margin-bottom: 0px;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+      @media (max-width: 991px) {
+        .single-team .meta-text .designation {
+          margin-bottom: 18px; } }
+    .single-team .meta-text a {
+      margin: 0 15px;
+      font-size: 14px;
+      font-weight: 400;
+      color: #fff;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+      @media (max-width: 991px) {
+        .single-team .meta-text a {
+          color: #777777; } }
   .single-team .social {
-    display: block;
-  }
-}
-
-/* line 76, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-.single-team:hover .meta-text {
-  background: -webkit-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-  background: -moz-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-  background: -o-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-  background: -linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-}
-
-@media (max-width: 991px) {
-  /* line 76, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
+    display: none; }
+    @media (max-width: 991px) {
+      .single-team .social {
+        display: block; } }
   .single-team:hover .meta-text {
-    background: transparent;
-  }
-}
-
-/* line 82, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-.single-team:hover .meta-text h4 {
-  color: #fff;
-}
-
-@media (max-width: 991px) {
-  /* line 82, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-  .single-team:hover .meta-text h4 {
-    color: #14303a;
-  }
-}
-
-/* line 89, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-.single-team:hover .meta-text .designation {
-  color: #fff;
-  margin-bottom: 18px;
-}
-
-@media (max-width: 991px) {
-  /* line 89, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-  .single-team:hover .meta-text .designation {
-    color: #777777;
-  }
-}
-
-/* line 98, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_team.scss */
-.single-team:hover .social {
-  display: block;
-}
+    background: -webkit-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
+    background: -moz-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
+    background: -o-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
+    background: -linear-gradient(0deg, #f95902 0%, #ffbd4a 100%); }
+    @media (max-width: 991px) {
+      .single-team:hover .meta-text {
+        background: transparent; } }
+    .single-team:hover .meta-text h4 {
+      color: #fff; }
+      @media (max-width: 991px) {
+        .single-team:hover .meta-text h4 {
+          color: #14303a; } }
+    .single-team:hover .meta-text .designation {
+      color: #fff;
+      margin-bottom: 18px; }
+      @media (max-width: 991px) {
+        .single-team:hover .meta-text .designation {
+          color: #777777; } }
+  .single-team:hover .social {
+    display: block; }
 
 /*--------------------------------------------------------------
 # End Team Area
@@ -2320,136 +1454,80 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Newsletter Area
 --------------------------------------------------------------*/
-/* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
 .newsletter-area {
   background: url(../img/newsletter-bg.jpg) no-repeat center;
   background-size: cover;
-  padding: 82px 0 76px;
-}
-
-/* line 9, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
-.newsletter-area .newsletter-inner h1 {
-  color: #fff;
-  font-size: 42px;
-  font-weight: 700;
-  letter-spacing: 2.1px;
-  margin-bottom: 15px;
-}
-
-@media (max-width: 991px) {
-  /* line 9, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
+  padding: 82px 0 76px; }
   .newsletter-area .newsletter-inner h1 {
-    font-size: 30px;
-    letter-spacing: 1px;
-  }
-}
-
-/* line 20, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
-.newsletter-area .newsletter-inner p {
-  font-size: 27px;
-  font-weight: normal;
-  color: #fff;
-  margin: 0;
-}
-
-@media (max-width: 991px) {
-  /* line 20, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 2.1px;
+    margin-bottom: 15px; }
+    @media (max-width: 991px) {
+      .newsletter-area .newsletter-inner h1 {
+        font-size: 30px;
+        letter-spacing: 1px; } }
   .newsletter-area .newsletter-inner p {
-    font-size: 20px;
-  }
-}
-
-/* line 30, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
-.newsletter-area .newsletter-widget {
-  min-width: 100%;
-  margin-top: 15px;
-}
-
-/* line 33, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
-.newsletter-area .newsletter-widget input[type="email"] {
-  min-width: 370px;
-  padding: 11px 20px;
-  border: transparent;
-  border-radius: 0px;
-  outline: none;
-}
-
-@media (max-width: 1199px) {
-  /* line 33, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
-  .newsletter-area .newsletter-widget input[type="email"] {
-    min-width: 275px;
-  }
-}
-
-@media (max-width: 991px) and (min-width: 768px) {
-  /* line 33, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
-  .newsletter-area .newsletter-widget input[type="email"] {
-    margin-bottom: 20px;
-  }
-}
-
-@media (max-width: 469px) {
-  /* line 33, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
-  .newsletter-area .newsletter-widget input[type="email"] {
-    margin-bottom: 15px;
-  }
-}
-
-/* line 95, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.newsletter-area .newsletter-widget input[type="email"].placeholder {
-  font-size: 13px;
-  color: #999999;
-}
-
-/* line 98, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.newsletter-area .newsletter-widget input[type="email"]:-moz-placeholder {
-  font-size: 13px;
-  color: #999999;
-}
-
-/* line 101, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.newsletter-area .newsletter-widget input[type="email"]::-moz-placeholder {
-  font-size: 13px;
-  color: #999999;
-}
-
-/* line 104, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.newsletter-area .newsletter-widget input[type="email"]::-webkit-input-placeholder {
-  font-size: 13px;
-  color: #999999;
-}
-
-/* line 53, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
-.newsletter-area .newsletter-widget .newsletter-btn {
-  line-height: 49px;
-  border-radius: 0px;
-  background: #14303a;
-  box-shadow: none;
-  font-size: 14px;
-  font-weight: 500;
-  text-align: center;
-  color: #fff;
-  border: 0;
-  padding: 0px 30px;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 66, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
-.newsletter-area .newsletter-widget .newsletter-btn:hover {
-  background: #fff;
-  color: #14303a;
-}
-
-@media (min-width: 470px) {
-  /* line 53, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_newsletter.scss */
-  .newsletter-area .newsletter-widget .newsletter-btn {
-    margin-left: 10px;
-  }
-}
+    font-size: 27px;
+    font-weight: normal;
+    color: #fff;
+    margin: 0; }
+    @media (max-width: 991px) {
+      .newsletter-area .newsletter-inner p {
+        font-size: 20px; } }
+  .newsletter-area .newsletter-widget {
+    min-width: 100%;
+    margin-top: 15px; }
+    .newsletter-area .newsletter-widget input[type="email"] {
+      min-width: 370px;
+      padding: 11px 20px;
+      border: transparent;
+      border-radius: 0px;
+      outline: none; }
+      @media (max-width: 1199px) {
+        .newsletter-area .newsletter-widget input[type="email"] {
+          min-width: 275px; } }
+      @media (max-width: 991px) and (min-width: 768px) {
+        .newsletter-area .newsletter-widget input[type="email"] {
+          margin-bottom: 20px; } }
+      @media (max-width: 469px) {
+        .newsletter-area .newsletter-widget input[type="email"] {
+          margin-bottom: 15px; } }
+      .newsletter-area .newsletter-widget input[type="email"].placeholder {
+        font-size: 13px;
+        color: #999999; }
+      .newsletter-area .newsletter-widget input[type="email"]:-moz-placeholder {
+        font-size: 13px;
+        color: #999999; }
+      .newsletter-area .newsletter-widget input[type="email"]::-moz-placeholder {
+        font-size: 13px;
+        color: #999999; }
+      .newsletter-area .newsletter-widget input[type="email"]::-webkit-input-placeholder {
+        font-size: 13px;
+        color: #999999; }
+    .newsletter-area .newsletter-widget .newsletter-btn {
+      line-height: 49px;
+      border-radius: 0px;
+      background: #14303a;
+      box-shadow: none;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      color: #fff;
+      border: 0;
+      padding: 0px 30px;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+      .newsletter-area .newsletter-widget .newsletter-btn:hover {
+        background: #fff;
+        color: #14303a; }
+      @media (min-width: 470px) {
+        .newsletter-area .newsletter-widget .newsletter-btn {
+          margin-left: 10px; } }
 
 /*--------------------------------------------------------------
 # End Newsletter Area
@@ -2457,148 +1535,81 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Contact Area
 --------------------------------------------------------------*/
-/* line 5, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
 .contact-page-area .contact-wrap {
   background: #fff;
-  margin-bottom: 100px;
-}
-
-/* line 10, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
+  margin-bottom: 100px; }
 .contact-page-area .contact-btns {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
   padding: 40px;
   color: #fff;
-  margin-bottom: 30px;
-}
-
-/* line 18, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
-.contact-page-area .contact-btns:hover {
-  color: #fff;
-}
-
-/* line 25, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
+  margin-bottom: 30px; }
+  .contact-page-area .contact-btns:hover {
+    color: #fff; }
 .contact-page-area .form-area .form-control:focus {
   box-shadow: none !important;
-  border-color: #ced4da !important;
-}
-
-/* line 31, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
+  border-color: #ced4da !important; }
 .contact-page-area .form-area input {
-  padding: 12px;
-}
-
-/* line 35, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
+  padding: 12px; }
 .contact-page-area .form-area input,
 .contact-page-area .form-area textarea {
   border-radius: 0;
-  font-size: 13px !important;
-}
-
-/* line 95, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.contact-page-area .form-area input.placeholder,
-.contact-page-area .form-area textarea.placeholder {
-  font-size: 13px;
-  color: #999999;
-}
-
-/* line 98, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.contact-page-area .form-area input:-moz-placeholder,
-.contact-page-area .form-area textarea:-moz-placeholder {
-  font-size: 13px;
-  color: #999999;
-}
-
-/* line 101, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.contact-page-area .form-area input::-moz-placeholder,
-.contact-page-area .form-area textarea::-moz-placeholder {
-  font-size: 13px;
-  color: #999999;
-}
-
-/* line 104, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.contact-page-area .form-area input::-webkit-input-placeholder,
-.contact-page-area .form-area textarea::-webkit-input-placeholder {
-  font-size: 13px;
-  color: #999999;
-}
-
-/* line 45, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
+  font-size: 13px !important; }
+  .contact-page-area .form-area input.placeholder,
+  .contact-page-area .form-area textarea.placeholder {
+    font-size: 13px;
+    color: #999999; }
+  .contact-page-area .form-area input:-moz-placeholder,
+  .contact-page-area .form-area textarea:-moz-placeholder {
+    font-size: 13px;
+    color: #999999; }
+  .contact-page-area .form-area input::-moz-placeholder,
+  .contact-page-area .form-area textarea::-moz-placeholder {
+    font-size: 13px;
+    color: #999999; }
+  .contact-page-area .form-area input::-webkit-input-placeholder,
+  .contact-page-area .form-area textarea::-webkit-input-placeholder {
+    font-size: 13px;
+    color: #999999; }
 .contact-page-area .form-area textarea {
   height: 154px;
   margin-top: 0px;
-  padding: 15px;
-}
-
+  padding: 15px; }
 @media (max-width: 991px) {
-  /* line 53, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
   .contact-page-area .address-wrap {
-    margin-bottom: 30px;
-  }
-}
-
-/* line 58, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
+    margin-bottom: 30px; } }
 .contact-page-area .address-wrap h2 {
   font-size: 42px;
   font-weight: 700;
   color: #14303a;
-  margin-bottom: 50px;
-}
-
-@media (max-width: 991px) {
-  /* line 58, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
-  .contact-page-area .address-wrap h2 {
-    font-size: 35px;
-  }
-}
-
-/* line 68, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
+  margin-bottom: 50px; }
+  @media (max-width: 991px) {
+    .contact-page-area .address-wrap h2 {
+      font-size: 35px; } }
 .contact-page-area .address-wrap .single-contact-address {
-  margin-bottom: 30px;
-}
-
-/* line 70, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
-.contact-page-area .address-wrap .single-contact-address:last-child {
-  margin-bottom: 0;
-}
-
-/* line 72, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
-.contact-page-area .address-wrap .single-contact-address:last-child p {
-  margin-bottom: 0;
-}
-
-/* line 77, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
-.contact-page-area .address-wrap .single-contact-address h5 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #14303a;
-  margin-bottom: 10px;
-}
-
-/* line 83, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
-.contact-page-area .address-wrap .single-contact-address p {
-  margin-bottom: 0;
-}
-
-/* line 87, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
-.contact-page-area .address-wrap .single-contact-address span {
-  font-size: 20px;
-  font-weight: 500;
-  color: #f95902;
-  margin-right: 15px;
-}
-
-@media (max-width: 1024px) and (min-width: 990px) {
-  /* line 95, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
+  margin-bottom: 30px; }
+  .contact-page-area .address-wrap .single-contact-address:last-child {
+    margin-bottom: 0; }
+    .contact-page-area .address-wrap .single-contact-address:last-child p {
+      margin-bottom: 0; }
   .contact-page-area .address-wrap .single-contact-address h5 {
-    font-size: 14px;
-  }
-  /* line 99, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_contact.scss */
+    font-size: 20px;
+    font-weight: 700;
+    color: #14303a;
+    margin-bottom: 10px; }
   .contact-page-area .address-wrap .single-contact-address p {
-    font-size: 10px;
-  }
-}
+    margin-bottom: 0; }
+  .contact-page-area .address-wrap .single-contact-address span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #f95902;
+    margin-right: 15px; }
+  @media (max-width: 1024px) and (min-width: 990px) {
+    .contact-page-area .address-wrap .single-contact-address h5 {
+      font-size: 14px; }
+    .contact-page-area .address-wrap .single-contact-address p {
+      font-size: 10px; } }
 
 /*--------------------------------------------------------------
 # End Contact Area
@@ -2606,86 +1617,52 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Error Area
 --------------------------------------------------------------*/
-/* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_error.scss */
 .error-area {
   padding: 200px 0px;
-  position: relative;
-}
-
-@media (max-width: 767px) {
-  /* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_error.scss */
-  .error-area {
-    padding: 100px 0px;
-  }
-}
-
-/* line 10, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_error.scss */
-.error-area:after {
-  content: '404';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -100%);
-  -moz-transform: translate(-50%, -100%);
-  -ms-transform: translate(-50%, -100%);
-  -o-transform: translate(-50%, -100%);
-  transform: translate(-50%, -100%);
-  font-size: 300px;
-  line-height: 215px;
-  font-weight: 700;
-  color: rgba(223, 223, 223, 0.2);
-}
-
-@media (max-width: 991px) {
-  /* line 10, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_error.scss */
+  position: relative; }
+  @media (max-width: 767px) {
+    .error-area {
+      padding: 100px 0px; } }
   .error-area:after {
-    font-size: 200px;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 10, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_error.scss */
-  .error-area:after {
-    font-size: 150px;
-    top: 48%;
-  }
-}
-
-/* line 28, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_error.scss */
-.error-area .error-heading {
-  font-size: 72px;
-  font-weight: 900;
-  text-align: center;
-  color: #14303a;
-  text-transform: uppercase;
-  margin-bottom: 100px;
-}
-
-@media (max-width: 991px) {
-  /* line 28, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_error.scss */
+    content: '404';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -100%);
+    -moz-transform: translate(-50%, -100%);
+    -ms-transform: translate(-50%, -100%);
+    -o-transform: translate(-50%, -100%);
+    transform: translate(-50%, -100%);
+    font-size: 300px;
+    line-height: 215px;
+    font-weight: 700;
+    color: rgba(223, 223, 223, 0.2); }
+    @media (max-width: 991px) {
+      .error-area:after {
+        font-size: 200px; } }
+    @media (max-width: 767px) {
+      .error-area:after {
+        font-size: 150px;
+        top: 48%; } }
   .error-area .error-heading {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 28, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_error.scss */
-  .error-area .error-heading {
-    font-size: 30px;
-  }
-}
-
-/* line 41, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_error.scss */
-.error-area .error-heading span {
-  color: #f95902;
-}
-
-/* line 45, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_error.scss */
-.error-area p {
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 0;
-}
+    font-size: 72px;
+    font-weight: 900;
+    text-align: center;
+    color: #14303a;
+    text-transform: uppercase;
+    margin-bottom: 100px; }
+    @media (max-width: 991px) {
+      .error-area .error-heading {
+        font-size: 50px; } }
+    @media (max-width: 767px) {
+      .error-area .error-heading {
+        font-size: 30px; } }
+    .error-area .error-heading span {
+      color: #f95902; }
+  .error-area p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 0; }
 
 /*--------------------------------------------------------------
 # End Error Area
@@ -2693,143 +1670,81 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Blog Area
 --------------------------------------------------------------*/
-/* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
 .latest-blog-area {
-  padding-bottom: 70px;
-}
+  padding-bottom: 70px; }
+  @media (max-width: 991px) {
+    .latest-blog-area {
+      padding-bottom: 20px; } }
 
-@media (max-width: 991px) {
-  /* line 4, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-  .latest-blog-area {
-    padding-bottom: 20px;
-  }
-}
-
-/* line 12, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
 .single-blog-post {
   margin-bottom: 60px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 17, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post .blog-info {
-  padding: 35px 30px;
-  border: 1px solid #e9ebee;
-  position: relative;
-}
-
-@media (max-width: 575px) {
-  /* line 17, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  transition: all 0.3s ease 0s; }
   .single-blog-post .blog-info {
-    padding: 35px 15px;
-  }
-}
-
-/* line 25, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post .blog-info:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-bottom: 1px solid transparent;
-  z-index: -1;
-}
-
-/* line 37, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post .meta {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-@media (max-width: 1199px) and (min-width: 992px) {
-  /* line 37, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+    padding: 35px 30px;
+    border: 1px solid #e9ebee;
+    position: relative; }
+    @media (max-width: 575px) {
+      .single-blog-post .blog-info {
+        padding: 35px 15px; } }
+    .single-blog-post .blog-info:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-bottom: 1px solid transparent;
+      z-index: -1; }
   .single-blog-post .meta {
-    font-size: 11px;
-  }
-}
-
-@media (max-width: 575px) {
-  /* line 37, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-  .single-blog-post .meta {
-    font-size: 12px;
-  }
-}
-
-/* line 50, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post .thumb {
-  overflow: hidden;
-}
-
-/* line 54, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post img {
-  overflow: hidden;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 61, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post h5 {
-  font-size: 20px;
-  font-weight: 700;
-  margin-bottom: 25px;
-  padding-bottom: 28px;
-  border-bottom: 1px solid #e9ebee;
-  line-height: 1.5;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 71, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post h5 a {
-  color: #14303a;
-}
-
-/* line 76, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post:hover {
-  box-shadow: 0px 20px 30px 0 rgba(20, 48, 58, 0.1);
-}
-
-/* line 79, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post:hover .blog-info {
-  border-bottom: 1px solid #f95902;
-}
-
-/* line 82, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post:hover .blog-info:after {
-  border-bottom: 1px solid #f95902;
-}
-
-/* line 87, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post:hover img {
-  transform: scale(1.2);
-}
-
-/* line 92, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post:hover h5 a {
-  color: #f95902;
-}
-
-/* line 97, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post:hover .primary-btn2 {
-  color: #f95902;
-}
-
-/* line 100, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-blog-post:hover .primary-btn2 i {
-  color: #f95902;
-  left: 15px;
-}
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px; }
+    @media (max-width: 1199px) and (min-width: 992px) {
+      .single-blog-post .meta {
+        font-size: 11px; } }
+    @media (max-width: 575px) {
+      .single-blog-post .meta {
+        font-size: 12px; } }
+  .single-blog-post .thumb {
+    overflow: hidden; }
+  .single-blog-post img {
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .single-blog-post h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e9ebee;
+    line-height: 1.5;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+    .single-blog-post h5 a {
+      color: #14303a; }
+  .single-blog-post:hover {
+    box-shadow: 0px 20px 30px 0 rgba(20, 48, 58, 0.1); }
+    .single-blog-post:hover .blog-info {
+      border-bottom: 1px solid #f95902; }
+      .single-blog-post:hover .blog-info:after {
+        border-bottom: 1px solid #f95902; }
+    .single-blog-post:hover img {
+      transform: scale(1.2); }
+    .single-blog-post:hover h5 a {
+      color: #f95902; }
+    .single-blog-post:hover .primary-btn2 {
+      color: #f95902; }
+      .single-blog-post:hover .primary-btn2 i {
+        color: #f95902;
+        left: 15px; }
 
 /*--------------------------------------------------------------
 # End Blog Area
@@ -2838,190 +1753,106 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Start Blog Side Area
 --------------------------------------------------------------*/
 @media (max-width: 991px) {
-  /* line 115, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
   .sidebar-widgets {
-    margin-top: 100px;
-  }
-}
-
-/* line 120, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+    margin-top: 100px; } }
 .sidebar-widgets .single-sidebar-widget {
-  margin-top: 58px;
-}
-
-/* line 123, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .single-sidebar-widget:last-child {
-  border-bottom: none;
-  margin-bottom: 0px;
-}
-
-/* line 129, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  margin-top: 58px; }
+  .sidebar-widgets .single-sidebar-widget:last-child {
+    border-bottom: none;
+    margin-bottom: 0px; }
 .sidebar-widgets .search-form {
-  min-height: 60px;
-}
-
-/* line 132, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .search-form input[type=text] {
-  color: #999999;
-  padding: 16px 20px;
-  font-size: 14px;
-  border: none;
-  float: left;
-  width: 80%;
-  background: #f6f6f6;
-}
-
-/* line 141, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .search-form input[type=text]:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-/* line 95, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.sidebar-widgets .search-form input[type=text].placeholder {
-  font-size: 14px;
-  color: #999999;
-}
-
-/* line 98, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.sidebar-widgets .search-form input[type=text]:-moz-placeholder {
-  font-size: 14px;
-  color: #999999;
-}
-
-/* line 101, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.sidebar-widgets .search-form input[type=text]::-moz-placeholder {
-  font-size: 14px;
-  color: #999999;
-}
-
-/* line 104, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
-.sidebar-widgets .search-form input[type=text]::-webkit-input-placeholder {
-  font-size: 14px;
-  color: #999999;
-}
-
-/* line 152, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .search-form button {
-  float: left;
-  width: 20%;
-  padding: 16px 10px;
-  background: #f6f6f6;
-  color: #999999;
-  font-size: 14px;
-  border: none;
-  cursor: pointer;
-}
-
-/* line 162, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .search-form button:focus {
-  box-shadow: none;
-  outline: none;
-}
-
-/* line 170, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  min-height: 60px; }
+  .sidebar-widgets .search-form input[type=text] {
+    color: #999999;
+    padding: 16px 20px;
+    font-size: 14px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: #f6f6f6; }
+    .sidebar-widgets .search-form input[type=text]:focus {
+      box-shadow: none;
+      outline: none; }
+    .sidebar-widgets .search-form input[type=text].placeholder {
+      font-size: 14px;
+      color: #999999; }
+    .sidebar-widgets .search-form input[type=text]:-moz-placeholder {
+      font-size: 14px;
+      color: #999999; }
+    .sidebar-widgets .search-form input[type=text]::-moz-placeholder {
+      font-size: 14px;
+      color: #999999; }
+    .sidebar-widgets .search-form input[type=text]::-webkit-input-placeholder {
+      font-size: 14px;
+      color: #999999; }
+  .sidebar-widgets .search-form button {
+    float: left;
+    width: 20%;
+    padding: 16px 10px;
+    background: #f6f6f6;
+    color: #999999;
+    font-size: 14px;
+    border: none;
+    cursor: pointer; }
+    .sidebar-widgets .search-form button:focus {
+      box-shadow: none;
+      outline: none; }
 .sidebar-widgets .popular-post-widget .popular-post-list {
-  margin-top: 30px;
-}
-
-/* line 174, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .popular-post-widget .popular-post-list .thumb img {
-  width: 100%;
-}
-
-/* line 180, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  margin-top: 30px; }
+  .sidebar-widgets .popular-post-widget .popular-post-list .thumb img {
+    width: 100%; }
 .sidebar-widgets .popular-post-widget .single-post-list {
-  margin-bottom: 20px;
-}
-
-/* line 183, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .popular-post-widget .single-post-list .details {
-  margin-left: 12px;
-}
-
-/* line 186, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .popular-post-widget .single-post-list .details p {
-  margin-bottom: 16px;
-  font-size: 13px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  line-height: 11px;
-}
-
-/* line 194, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .popular-post-widget .single-post-list .details h4 {
-  margin-bottom: 0px;
-  font-weight: 500;
-  color: #14303a;
-  line-height: 28px;
-}
-
-@media (max-width: 575px) {
-  /* line 194, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-  .sidebar-widgets .popular-post-widget .single-post-list .details h4 {
-    font-size: 15px;
-    line-height: 24px;
-  }
-}
-
-/* line 207, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .popular-post-widget .single-post-list:hover h4 {
-  color: #f95902;
-}
-
-/* line 216, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  margin-bottom: 20px; }
+  .sidebar-widgets .popular-post-widget .single-post-list .details {
+    margin-left: 12px; }
+    .sidebar-widgets .popular-post-widget .single-post-list .details p {
+      margin-bottom: 16px;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      line-height: 11px; }
+    .sidebar-widgets .popular-post-widget .single-post-list .details h4 {
+      margin-bottom: 0px;
+      font-weight: 500;
+      color: #14303a;
+      line-height: 28px; }
+      @media (max-width: 575px) {
+        .sidebar-widgets .popular-post-widget .single-post-list .details h4 {
+          font-size: 15px;
+          line-height: 24px; } }
+  .sidebar-widgets .popular-post-widget .single-post-list:hover h4 {
+    color: #f95902; }
 .sidebar-widgets .post-category-widget .cat-list li {
   position: relative;
   padding-bottom: 18px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 222, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .post-category-widget .cat-list li:after {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 30%;
-  right: 16%;
-  height: 1px;
-  background: #e9ebee;
-}
-
-/* line 232, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .post-category-widget .cat-list li:last-child {
-  padding-bottom: 0;
-}
-
-/* line 236, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .post-category-widget .cat-list li p {
-  font-weight: 300;
-  font-size: 14px;
-  margin-bottom: 0px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 244, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .post-category-widget .cat-list li a {
-  color: #777777;
-}
-
-/* line 248, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .post-category-widget .cat-list li:hover {
-  border-color: #f95902;
-}
-
-/* line 251, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .post-category-widget .cat-list li:hover p {
-  color: #f95902;
-}
-
-/* line 261, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  transition: all 0.3s ease 0s; }
+  .sidebar-widgets .post-category-widget .cat-list li:after {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 30%;
+    right: 16%;
+    height: 1px;
+    background: #e9ebee; }
+  .sidebar-widgets .post-category-widget .cat-list li:last-child {
+    padding-bottom: 0; }
+  .sidebar-widgets .post-category-widget .cat-list li p {
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 0px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .sidebar-widgets .post-category-widget .cat-list li a {
+    color: #777777; }
+  .sidebar-widgets .post-category-widget .cat-list li:hover {
+    border-color: #f95902; }
+    .sidebar-widgets .post-category-widget .cat-list li:hover p {
+      color: #f95902; }
 .sidebar-widgets .tag-cloud-widget ul li {
   display: inline-block;
   border: 1px solid #eee;
@@ -3031,100 +1862,60 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 270, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .tag-cloud-widget ul li:hover {
-  background: #f95902;
-}
-
-/* line 273, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .tag-cloud-widget ul li:hover a {
-  color: #fff;
-}
-
-/* line 278, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .tag-cloud-widget ul li a {
-  font-size: 12px;
-  color: black;
-}
-
-/* line 288, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  transition: all 0.3s ease 0s; }
+  .sidebar-widgets .tag-cloud-widget ul li:hover {
+    background: #f95902; }
+    .sidebar-widgets .tag-cloud-widget ul li:hover a {
+      color: #fff; }
+  .sidebar-widgets .tag-cloud-widget ul li a {
+    font-size: 12px;
+    color: black; }
 .sidebar-widgets .instagram-widget ul li {
   display: inline-block;
   width: 32%;
   padding-bottom: 3px;
-  position: relative;
-}
-
-@media (max-width: 991px) {
-  /* line 288, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-  .sidebar-widgets .instagram-widget ul li {
-    width: 16%;
-  }
-}
-
-@media (max-width: 767px) {
-  /* line 288, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-  .sidebar-widgets .instagram-widget ul li {
-    width: 32%;
-    margin-bottom: 5px;
-  }
-}
-
-@media (max-width: 420px) {
-  /* line 288, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-  .sidebar-widgets .instagram-widget ul li {
-    width: 32%;
-    margin-bottom: 0px;
-  }
-}
-
-/* line 307, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .instagram-widget ul li:after {
-  content: "\e73d";
-  font-family: 'themify';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  font-size: 25px;
-  font-weight: 700;
-  color: #f95902;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 320, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .instagram-widget ul li img {
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 323, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .instagram-widget ul li:hover {
-  cursor: pointer;
-}
-
-/* line 325, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .instagram-widget ul li:hover:after {
-  opacity: 1;
-}
-
-/* line 328, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.sidebar-widgets .instagram-widget ul li:hover img {
-  opacity: .2;
-}
+  position: relative; }
+  @media (max-width: 991px) {
+    .sidebar-widgets .instagram-widget ul li {
+      width: 16%; } }
+  @media (max-width: 767px) {
+    .sidebar-widgets .instagram-widget ul li {
+      width: 32%;
+      margin-bottom: 5px; } }
+  @media (max-width: 420px) {
+    .sidebar-widgets .instagram-widget ul li {
+      width: 32%;
+      margin-bottom: 0px; } }
+  .sidebar-widgets .instagram-widget ul li:after {
+    content: "\e73d";
+    font-family: 'themify';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 25px;
+    font-weight: 700;
+    color: #f95902;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .sidebar-widgets .instagram-widget ul li img {
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+  .sidebar-widgets .instagram-widget ul li:hover {
+    cursor: pointer; }
+    .sidebar-widgets .instagram-widget ul li:hover:after {
+      opacity: 1; }
+    .sidebar-widgets .instagram-widget ul li:hover img {
+      opacity: .2; }
 
 /*--------------------------------------------------------------
 # End Blog Side Area
@@ -3132,7 +1923,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Blog Details Area
 --------------------------------------------------------------*/
-/* line 346, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
 .single-post-area .meta-tags a {
   display: inline-block;
   color: #777777;
@@ -3142,141 +1932,79 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 355, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .meta-tags a:hover {
-  color: #f95902;
-}
-
-/* line 358, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .meta-tags a:last-child {
-  margin-right: 0;
-}
-
-/* line 364, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  transition: all 0.3s ease 0s; }
+  .single-post-area .meta-tags a:hover {
+    color: #f95902; }
+  .single-post-area .meta-tags a:last-child {
+    margin-right: 0; }
 .single-post-area .deatils-heading {
   max-width: 665px;
   font-size: 30px;
   font-weight: 700;
-  color: #14303a;
-}
-
-/* line 371, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  color: #14303a; }
 .single-post-area .social {
-  border-top: 1px solid #e9ebee;
-}
-
-/* line 374, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .social a {
-  display: inline-block;
-  margin-right: 25px;
-  padding: 16px 40px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 384, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .social a:hover {
-  opacity: .8;
-}
-
-@media (max-width: 1199px) {
-  /* line 374, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  border-top: 1px solid #e9ebee; }
   .single-post-area .social a {
-    margin-right: 80px;
-    margin-bottom: 15px;
-  }
-}
-
-/* line 392, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .social a:last-child {
-  margin-right: 0px;
-}
-
-/* line 396, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .social a.facebook {
-  background: #3b5998;
-}
-
-/* line 400, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .social a.twitter {
-  background: #00acee;
-}
-
-/* line 404, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .social a.google {
-  background: #cc3333;
-}
-
-/* line 408, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .social a.linkedin {
-  background: #0072b1;
-}
-
-/* line 412, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .social a i {
-  margin-right: 12px;
-}
-
-/* line 418, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+    display: inline-block;
+    margin-right: 25px;
+    padding: 16px 40px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+    .single-post-area .social a:hover {
+      opacity: .8; }
+    @media (max-width: 1199px) {
+      .single-post-area .social a {
+        margin-right: 80px;
+        margin-bottom: 15px; } }
+    .single-post-area .social a:last-child {
+      margin-right: 0px; }
+    .single-post-area .social a.facebook {
+      background: #3b5998; }
+    .single-post-area .social a.twitter {
+      background: #00acee; }
+    .single-post-area .social a.google {
+      background: #cc3333; }
+    .single-post-area .social a.linkedin {
+      background: #0072b1; }
+    .single-post-area .social a i {
+      margin-right: 12px; }
 .single-post-area .arrow {
-  position: absolute;
-}
-
-/* line 421, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .arrow span {
-  font-size: 20px;
-  font-weight: 600;
-}
-
-/* line 428, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  position: absolute; }
+  .single-post-area .arrow span {
+    font-size: 20px;
+    font-weight: 600; }
 .single-post-area .thumb .overlay-bg {
-  background: rgba(0, 0, 0, 0.8);
-}
-
-/* line 433, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  background: rgba(0, 0, 0, 0.8); }
 .single-post-area .navigation-area {
   border-top: 1px solid #eee;
-  padding-top: 30px;
-}
-
-/* line 437, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .navigation-area a {
-  display: inline-block;
-  margin: 0px 15px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #14303a;
-}
-
-/* line 444, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .navigation-area a i {
-  display: inline-block;
-  font-size: 13.5px;
-  padding: 15px;
-  background: #14303a;
-  color: #fff;
-  border-radius: 2px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 456, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.single-post-area .navigation-area a:hover i {
-  background: -webkit-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-  background: -moz-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-  background: -o-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-  background: -linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
-}
+  padding-top: 30px; }
+  .single-post-area .navigation-area a {
+    display: inline-block;
+    margin: 0px 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #14303a; }
+    .single-post-area .navigation-area a i {
+      display: inline-block;
+      font-size: 13.5px;
+      padding: 15px;
+      background: #14303a;
+      color: #fff;
+      border-radius: 2px;
+      -webkit-transition: all 0.3s ease 0s;
+      -moz-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    .single-post-area .navigation-area a:hover i {
+      background: -webkit-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
+      background: -moz-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
+      background: -o-linear-gradient(0deg, #f95902 0%, #ffbd4a 100%);
+      background: -linear-gradient(0deg, #f95902 0%, #ffbd4a 100%); }
 
 /*--------------------------------------------------------------
 # End Blog Details Area
@@ -3284,95 +2012,55 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Blog Comment Area
 --------------------------------------------------------------*/
-/* line 471, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
 .comments-area {
   padding-top: 30px;
   margin-top: 30px;
-  border-top: 1px solid #e9ebee;
-}
-
-/* line 476, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comments-area h4 {
-  margin-bottom: 50px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #14303a;
-}
-
-/* line 483, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comments-area a {
-  color: #000000;
-}
-
-/* line 486, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comments-area .single-comment {
-  margin-bottom: 30px;
-}
-
-/* line 490, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comments-area .comment-list {
-  padding-bottom: 30px;
-}
-
-/* line 493, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comments-area .comment-list:last-child {
-  padding-bottom: 0px;
-}
-
-@media (max-width: 413px) {
-  /* line 499, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-  .comments-area .comment-list .single-comment h5 {
-    font-size: 12px;
-  }
-  /* line 503, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-  .comments-area .comment-list .single-comment .date {
-    font-size: 11px;
-  }
-  /* line 507, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-  .comments-area .comment-list .single-comment .comment {
-    font-size: 10px;
-  }
-}
-
-/* line 514, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comments-area .thumb {
-  margin-right: 35px;
-}
-
-/* line 518, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comments-area .date {
-  font-size: 14px;
-}
-
-/* line 522, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comments-area .btn-reply {
-  display: inline-block;
-  color: #14303a;
-  font-weight: 500;
-  position: relative;
-  padding-left: 12px;
-  margin-left: 12px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 531, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comments-area .btn-reply:before {
-  content: '';
-  position: absolute;
-  top: 9px;
-  left: 0;
-  height: 10px;
-  width: 1px;
-  background: #777777;
-}
-
-/* line 541, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comments-area .btn-reply:hover {
-  color: #f95902;
-}
+  border-top: 1px solid #e9ebee; }
+  .comments-area h4 {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #14303a; }
+  .comments-area a {
+    color: #000000; }
+  .comments-area .single-comment {
+    margin-bottom: 30px; }
+  .comments-area .comment-list {
+    padding-bottom: 30px; }
+    .comments-area .comment-list:last-child {
+      padding-bottom: 0px; }
+    @media (max-width: 413px) {
+      .comments-area .comment-list .single-comment h5 {
+        font-size: 12px; }
+      .comments-area .comment-list .single-comment .date {
+        font-size: 11px; }
+      .comments-area .comment-list .single-comment .comment {
+        font-size: 10px; } }
+  .comments-area .thumb {
+    margin-right: 35px; }
+  .comments-area .date {
+    font-size: 14px; }
+  .comments-area .btn-reply {
+    display: inline-block;
+    color: #14303a;
+    font-weight: 500;
+    position: relative;
+    padding-left: 12px;
+    margin-left: 12px;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; }
+    .comments-area .btn-reply:before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 0;
+      height: 10px;
+      width: 1px;
+      background: #777777; }
+    .comments-area .btn-reply:hover {
+      color: #f95902; }
 
 /*--------------------------------------------------------------
 # End Blog Comment Area
@@ -3380,134 +2068,70 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Start Blog Comment Form Area
 --------------------------------------------------------------*/
-/* line 554, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
 .comment-form {
-  margin-top: 50px;
-}
-
-/* line 557, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comment-form h4 {
-  margin-bottom: 50px;
-  font-size: 20px;
-  font-weight: 700;
-  color: #14303a;
-}
-
-/* line 564, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comment-form .name {
-  padding-left: 0px;
-}
-
-@media (max-width: 991px) {
-  /* line 564, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+  margin-top: 50px; }
+  .comment-form h4 {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #14303a; }
   .comment-form .name {
-    padding-right: 0px;
-  }
-}
-
-/* line 572, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comment-form .email {
-  padding-right: 0px;
-}
-
-@media (max-width: 991px) {
-  /* line 572, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
+    padding-left: 0px; }
+    @media (max-width: 991px) {
+      .comment-form .name {
+        padding-right: 0px; } }
   .comment-form .email {
-    padding-left: 0px;
-  }
-}
-
-/* line 580, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comment-form .form-control {
-  padding: 10px;
-  background: #fff;
-  border: 1px solid #e9ebee;
-  border-radius: 0px;
-  width: 100%;
-  font-size: 13px;
-  color: #999999;
-}
-
-/* line 589, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_blog.scss */
-.comment-form .form-control:focus {
-  box-shadow: none;
-}
+    padding-right: 0px; }
+    @media (max-width: 991px) {
+      .comment-form .email {
+        padding-left: 0px; } }
+  .comment-form .form-control {
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #e9ebee;
+    border-radius: 0px;
+    width: 100%;
+    font-size: 13px;
+    color: #999999; }
+    .comment-form .form-control:focus {
+      box-shadow: none; }
 
 /*--------------------------------------------------------------
 # End Blog Comment Form Area
 --------------------------------------------------------------*/
-/* line 3, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
 .footer-area {
-  background-color: #06091f;
-}
-
-/* line 6, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.footer-area h6 {
-  color: #fff;
-  margin-bottom: 25px;
-  font-size: 24px;
-  font-weight: 700;
-}
-
-/* line 13, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.footer-area p {
-  color: #fff;
-}
-
-/* line 17, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.footer-area .footer-top {
-  padding: 120px 0;
-}
-
-@media (max-width: 767px) {
-  /* line 17, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
+  background-color: #06091f; }
+  .footer-area h6 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 24px;
+    font-weight: 700; }
+  .footer-area p {
+    color: #fff; }
   .footer-area .footer-top {
-    padding: 60px 0 40px;
-  }
-}
-
-/* line 25, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.footer-area .footer-nav li {
-  margin-top: 8px;
-}
-
-/* line 28, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.footer-area .footer-nav li a {
-  color: #fff;
-  font-weight: 400;
-}
-
-/* line 32, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.footer-area .footer-nav li a:hover {
-  color: #f95902;
-}
-
-/* line 39, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.footer-area .footer-bottom {
-  padding: 16px 0px;
-  border-top: 1px solid rgba(255, 255, 255, 0.25);
-}
+    padding: 120px 0; }
+    @media (max-width: 767px) {
+      .footer-area .footer-top {
+        padding: 60px 0 40px; } }
+  .footer-area .footer-nav li {
+    margin-top: 8px; }
+    .footer-area .footer-nav li a {
+      color: #fff;
+      font-weight: 400; }
+      .footer-area .footer-nav li a:hover {
+        color: #f95902; }
+  .footer-area .footer-bottom {
+    padding: 16px 0px;
+    border-top: 1px solid rgba(255, 255, 255, 0.25); }
+    @media (max-width: 767px) {
+      .footer-area .footer-bottom .footer-text {
+        text-align: center; } }
+    .footer-area .footer-bottom .footer-text a {
+      color: #f95902; }
 
 @media (max-width: 767px) {
-  /* line 42, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-  .footer-area .footer-bottom .footer-text {
-    text-align: center;
-  }
-}
-
-/* line 46, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.footer-area .footer-bottom .footer-text a {
-  color: #f95902;
-}
-
-@media (max-width: 767px) {
-  /* line 54, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
   .footer-social {
-    margin-top: 10px;
-  }
-}
-
-/* line 58, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
+    margin-top: 10px; } }
 .footer-social a {
   color: #fff;
   font-size: 14px;
@@ -3515,22 +2139,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
+  transition: all 0.3s ease 0s; }
+  @media (max-width: 767px) {
+    .footer-social a:first-child {
+      margin-left: 0px; } }
+  .footer-social a:hover {
+    color: #f95902; }
 
-@media (max-width: 767px) {
-  /* line 63, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-  .footer-social a:first-child {
-    margin-left: 0px;
-  }
-}
-
-/* line 69, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.footer-social a:hover {
-  color: #f95902;
-}
-
-/* line 77, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
 .single-footer-widget input {
   line-height: 38px;
   border: 1px solid #e9ebee;
@@ -3539,22 +2154,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 3px;
   color: #aaaaaa;
   padding-left: 20px;
-  width: 100%;
-}
-
-/* line 87, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.single-footer-widget input:focus {
-  outline: none;
-}
-
-@media (max-width: 991px) {
-  /* line 77, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-  .single-footer-widget input {
-    margin-bottom: 15px;
-  }
-}
-
-/* line 96, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
+  width: 100%; }
+  .single-footer-widget input:focus {
+    outline: none; }
+  @media (max-width: 991px) {
+    .single-footer-widget input {
+      margin-bottom: 15px; } }
 .single-footer-widget .subscribe-btn {
   background: #f95902;
   border: 1px solid #f95902;
@@ -3569,84 +2174,45 @@ body.mobile-nav-active #mobile-nav-toggle {
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-/* line 108, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.single-footer-widget .subscribe-btn:hover {
-  background: transparent;
-}
-
+  transition: all 0.3s ease 0s; }
+  .single-footer-widget .subscribe-btn:hover {
+    background: transparent; }
 @media (max-width: 768px) {
-  /* line 114, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
   .single-footer-widget .newsletter {
-    padding-bottom: 40px;
-  }
-}
-
-/* line 95, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
+    padding-bottom: 40px; } }
 .single-footer-widget.placeholder {
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
-}
-
-/* line 98, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
+  color: #aaaaaa; }
 .single-footer-widget:-moz-placeholder {
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
-}
-
-/* line 101, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
+  color: #aaaaaa; }
 .single-footer-widget::-moz-placeholder {
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
-}
-
-/* line 104, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_mixins.scss */
+  color: #aaaaaa; }
 .single-footer-widget::-webkit-input-placeholder {
   font-size: 13px;
   font-weight: 400;
-  color: #aaaaaa;
-}
-
+  color: #aaaaaa; }
 @media (max-width: 991.98px) {
-  /* line 76, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
   .single-footer-widget {
-    margin-bottom: 30px;
-  }
-}
-
-/* line 134, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
+    margin-bottom: 30px; } }
 .single-footer-widget.contact-widget .footer-nav li:nth-child(1) a:before {
-  content: "\e621";
-}
-
-/* line 141, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
+  content: "\e621"; }
 .single-footer-widget.contact-widget .footer-nav li:nth-child(2) a:before {
-  content: "\e75a";
-}
-
-/* line 148, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
+  content: "\e75a"; }
 .single-footer-widget.contact-widget .footer-nav li:nth-child(3) a:before {
-  content: "\e665";
-}
-
-/* line 153, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
+  content: "\e665"; }
 .single-footer-widget.contact-widget .footer-nav li a {
   position: relative;
   display: inline-block;
-  margin-left: 20px;
-}
-
-/* line 157, F:/Task/Nayeem/naim/constructions.github.io/scss/theme/_footer.scss */
-.single-footer-widget.contact-widget .footer-nav li a:before {
-  font-family: 'themify';
-  position: relative;
-  left: -20px;
-  font-size: 14px;
-}
+  margin-left: 20px; }
+  .single-footer-widget.contact-widget .footer-nav li a:before {
+    font-family: 'themify';
+    position: relative;
+    left: -20px;
+    font-size: 14px; }
 
 /*# sourceMappingURL=main.css.map */
