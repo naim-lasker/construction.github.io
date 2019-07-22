@@ -937,10 +937,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .about-page .about-area {
   margin-top: 0px;
-  padding-top: 130px; }
+  padding-top: 130px;
+  padding-bottom: 130px; }
   @media (max-width: 991px) {
     .about-page .about-area {
-      padding-top: 80px; } }
+      padding-top: 80px;
+      padding-bottom: 80px; } }
 
 /*--------------------------------------------------------------
 # End About Area
