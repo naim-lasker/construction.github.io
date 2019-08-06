@@ -5,7 +5,10 @@
     background: url(../img/testimonial/testimonial-bg.jpg) no-repeat scroll center center;
     background-size: cover;
     position: relative;
-
+    padding: 130px 0 120px;
+    @media (max-width: 991px) {
+        padding: 80px 0 70px;
+    }
     &:before {
         content: "";
         background: rgba(#030112, 0.8);

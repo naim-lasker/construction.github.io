@@ -67,12 +67,6 @@
 --------------------------------------------------------------*/
 .advance-feature-area {
     position: relative;
-    @media (max-width: 1630px) {
-      padding-top: 120px;
-    }
-    @media(max-width: 991px) {
-        padding-top: 80px;
-    }
     .container-fluid {
       padding-left: 21%;
       @media (max-width: 1480px) {
@@ -90,6 +84,12 @@
       }
       @media (min-width: 1921px) {
         padding-left: 29%;
+      }
+    }
+    .left-side {
+      padding: 129px 0px;
+      @media (max-width: 991px) {
+        padding: 80px 0px;
       }
     }
       

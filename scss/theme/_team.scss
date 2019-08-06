@@ -72,7 +72,7 @@
         }
     }
 
-    &:hover {
+    &.active, &:hover {
         .meta-text {
             @include gradient($primary-color 0%, $primary-color2 100%);
             @media (max-width: 991px) {

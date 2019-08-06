@@ -11,6 +11,8 @@
     header = $("#header"),
     fitscreen = window_height - header_height;
 
+    // $('.home-banner-area').css("height", (window_height - 139));
+
   // $(".fullscreen").css("height", window_height)
   $(".fitscreen").css("height", fitscreen);
 

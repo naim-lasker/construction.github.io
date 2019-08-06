@@ -2,24 +2,8 @@
 # Start About Area
 --------------------------------------------------------------*/
 .about-area {
-    background: $white;
-    padding: 80px 50px;
     position: relative;
     z-index: 99;
-    margin-top: -80px;
-    box-shadow: 0px 5px 20px 0 rgba($title-color, 0.10);
-    @media (max-width: 991px) {
-        margin-top: 0;
-        padding: 80px 0;
-        box-shadow: none;
-    }
-    &.about-area2 {
-        box-shadow: none;
-        padding-bottom: 0px;
-        @media (max-width: 991px) {
-            padding-top: 0px;
-        }
-    }
     .main-title {
         padding: 0px 30px;
         h2 {
